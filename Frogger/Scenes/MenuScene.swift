@@ -12,7 +12,7 @@ protocol MenuDelegate {
     func playGame()
 }
 
-class MenuScene: SKScene {
+class MenuScene: SKScene, ButtonDelegate {
     
     var menuDelegate : MenuDelegate!
     var playButton : SKSpriteNode!
@@ -24,13 +24,14 @@ class MenuScene: SKScene {
         
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for touch in touches {
-            if playButton.contains(touch.location(in: self)) {
-                self.menuDelegate.playGame()
-            }
-        }
+    
+    func setSelectedButton(buttonNode: ButtonNode) {
+        
     }
+    func setDeselectedButton(buttonNode: ButtonNode) {
+        self.menuDelegate.playGame()
+    }
+
     
 
 }
