@@ -22,11 +22,19 @@ class MenuScene: SKScene, ButtonDelegate {
     
         self.size = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        playButton = ButtonNode(texture: nil, size: CGSize(width: 40, height: 40), scene: self)
+        
+        
+        playButton = ButtonNode(texture: SKTexture(imageNamed:"playSprite"), size: CGSize(width: 100, height: 40), scene: self)
         self.addChild(playButton)
         
+        setRecordsLabels()
+        
     }
+    func setRecordsLabels(){
+        
+        
     
+    }
     func setSelectedButton(buttonNode: ButtonNode) {
         
     }

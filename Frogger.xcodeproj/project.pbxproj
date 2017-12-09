@@ -13,7 +13,6 @@
 		2A18D1891FDC71CB0008350A /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A18D1881FDC71CB0008350A /* MenuScene.swift */; };
 		2A18D18B1FDC72DE0008350A /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A18D18A1FDC72DE0008350A /* ButtonNode.swift */; };
 		2A3C55731FD4B62D00AC4CE6 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C55721FD4B62D00AC4CE6 /* Vehicle.swift */; };
-		2A3C55791FD4BFF500AC4CE6 /* frogger6.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A3C55781FD4BFF400AC4CE6 /* frogger6.json */; };
 		2A3C557D1FD4CDD900AC4CE6 /* Frogger.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A3C557C1FD4CDD900AC4CE6 /* Frogger.json */; };
 		2A6BA89E1F97DBB1004B8A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA89D1F97DBB1004B8A9B /* AppDelegate.swift */; };
 		2A6BA8A41F97DBB1004B8A9B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA8A31F97DBB1004B8A9B /* GameScene.swift */; };
@@ -29,6 +28,7 @@
 		2A6BA8CB1F9991E7004B8A9B /* froggermap4.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A6BA8CA1F9991E3004B8A9B /* froggermap4.json */; };
 		2AA0D4091FD4A2D600E659C2 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0D4081FD4A2D600E659C2 /* MapManager.swift */; };
 		2AC317301FD4AFEA008BFFF5 /* Spawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3172F1FD4AFEA008BFFF5 /* Spawn.swift */; };
+		5ADAA6BC1FDC82980005F426 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADAA6BB1FDC82980005F426 /* Record.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,6 @@
 		2A18D1881FDC71CB0008350A /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		2A18D18A1FDC72DE0008350A /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
 		2A3C55721FD4B62D00AC4CE6 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
-		2A3C55781FD4BFF400AC4CE6 /* frogger6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = frogger6.json; path = ../../../../../Desktop/frogger6.json; sourceTree = "<group>"; };
 		2A3C557C1FD4CDD900AC4CE6 /* Frogger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Frogger.json; sourceTree = "<group>"; };
 		2A6BA89A1F97DBB1004B8A9B /* Frogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6BA89D1F97DBB1004B8A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		2A6BA8CA1F9991E3004B8A9B /* froggermap4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = froggermap4.json; sourceTree = "<group>"; };
 		2AA0D4081FD4A2D600E659C2 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		2AC3172F1FD4AFEA008BFFF5 /* Spawn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spawn.swift; sourceTree = "<group>"; };
+		5ADAA6BB1FDC82980005F426 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				2A3C557C1FD4CDD900AC4CE6 /* Frogger.json */,
-				2A3C55781FD4BFF400AC4CE6 /* frogger6.json */,
 				2A6BA8CA1F9991E3004B8A9B /* froggermap4.json */,
 				2A6BA8B61F97FF0E004B8A9B /* froggermap.json */,
 			);
@@ -131,6 +130,7 @@
 				2AA0D4081FD4A2D600E659C2 /* MapManager.swift */,
 				2AC3172F1FD4AFEA008BFFF5 /* Spawn.swift */,
 				2A3C55721FD4B62D00AC4CE6 /* Vehicle.swift */,
+				5ADAA6BB1FDC82980005F426 /* Record.swift */,
 				2A18D1811FDC50730008350A /* Coin.swift */,
 				2A18D1841FDC51610008350A /* Ground.swift */,
 				2A18D1861FDC5F1A0008350A /* HudLayer.swift */,
@@ -179,7 +179,7 @@
 				TargetAttributes = {
 					2A6BA8991F97DBB1004B8A9B = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -209,7 +209,6 @@
 				2A6BA8CB1F9991E7004B8A9B /* froggermap4.json in Resources */,
 				2A6BA8A91F97DBB1004B8A9B /* Main.storyboard in Resources */,
 				2A6BA8AB1F97DBB1004B8A9B /* Assets.xcassets in Resources */,
-				2A3C55791FD4BFF500AC4CE6 /* frogger6.json in Resources */,
 				2A3C557D1FD4CDD900AC4CE6 /* Frogger.json in Resources */,
 				2A6BA8AE1F97DBB1004B8A9B /* LaunchScreen.storyboard in Resources */,
 				2A6BA8B91F9807C7004B8A9B /* froggermap.json in Resources */,
@@ -229,6 +228,7 @@
 				2A18D1891FDC71CB0008350A /* MenuScene.swift in Sources */,
 				2A6BA8C51F994551004B8A9B /* ObjectOrientation.swift in Sources */,
 				2AC317301FD4AFEA008BFFF5 /* Spawn.swift in Sources */,
+				5ADAA6BC1FDC82980005F426 /* Record.swift in Sources */,
 				2A6BA8A61F97DBB1004B8A9B /* GameViewController.swift in Sources */,
 				2AA0D4091FD4A2D600E659C2 /* MapManager.swift in Sources */,
 				2A18D1851FDC51610008350A /* Ground.swift in Sources */,
@@ -311,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -362,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -374,12 +374,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G42Z863W7H;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Frogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigofranzoi.Frogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,12 +390,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G42Z863W7H;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Frogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigofranzoi.Frogger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
