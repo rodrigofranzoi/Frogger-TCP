@@ -1,0 +1,335 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MenuDelegate"
+- "MenuScene"
+provides-nominal:
+- "7Frogger12MenuDelegateP"
+- "7Frogger9MenuSceneC"
+provides-member:
+- ["7Frogger12MenuDelegateP", ""]
+- ["7Frogger9MenuSceneC", ""]
+provides-dynamic-lookup:
+- "didMove"
+- "touchesBegan"
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "CGSize"
+- "MenuDelegate"
+- "MenuScene"
+- "SKScene"
+- "SKSpriteNode"
+- "SKView"
+- "Set"
+- "UIEvent"
+- "UITouch"
+depends-member:
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["SC6CGSizeV", "init"]
+- !private ["s7CVarArgP", "CGSize"]
+- !private ["s7CVarArgP", "SKSpriteNode"]
+- !private ["s7CVarArgP", "addChild"]
+- !private ["s7CVarArgP", "contains"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "location"]
+- !private ["s7CVarArgP", "menuDelegate"]
+- !private ["s7CVarArgP", "playButton"]
+- !private ["s7CVarArgP", "red"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "CGSize"]
+- !private ["s28CustomDebugStringConvertibleP", "SKSpriteNode"]
+- !private ["s28CustomDebugStringConvertibleP", "addChild"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "location"]
+- !private ["s28CustomDebugStringConvertibleP", "menuDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "playButton"]
+- !private ["s28CustomDebugStringConvertibleP", "red"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "contains"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "CGSize"]
+- !private ["s23CustomStringConvertibleP", "SKSpriteNode"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addChild"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "location"]
+- !private ["s23CustomStringConvertibleP", "menuDelegate"]
+- !private ["s23CustomStringConvertibleP", "playButton"]
+- !private ["s23CustomStringConvertibleP", "red"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "CGSize"]
+- !private ["s9EquatableP", "SKSpriteNode"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addChild"]
+- !private ["s9EquatableP", "contains"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "location"]
+- !private ["s9EquatableP", "menuDelegate"]
+- !private ["s9EquatableP", "playButton"]
+- !private ["s9EquatableP", "red"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["So19GKSceneRootNodeTypeP", "CGSize"]
+- !private ["So19GKSceneRootNodeTypeP", "SKSpriteNode"]
+- !private ["So19GKSceneRootNodeTypeP", "addChild"]
+- !private ["So19GKSceneRootNodeTypeP", "init"]
+- !private ["So19GKSceneRootNodeTypeP", "menuDelegate"]
+- !private ["So19GKSceneRootNodeTypeP", "playButton"]
+- ["So19GKSceneRootNodeTypeP", ""]
+- !private ["s8HashableP", "CGSize"]
+- !private ["s8HashableP", "SKSpriteNode"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addChild"]
+- !private ["s8HashableP", "contains"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "location"]
+- !private ["s8HashableP", "menuDelegate"]
+- !private ["s8HashableP", "playButton"]
+- !private ["s8HashableP", "red"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["7Frogger12MenuDelegateP", "playGame"]
+- !private ["7Frogger9MenuSceneC", "CGSize"]
+- ["7Frogger9MenuSceneC", "MenuDelegate"]
+- ["7Frogger9MenuSceneC", "SKSpriteNode"]
+- ["7Frogger9MenuSceneC", "SKView"]
+- ["7Frogger9MenuSceneC", "Set"]
+- ["7Frogger9MenuSceneC", "UIEvent"]
+- ["7Frogger9MenuSceneC", "UITouch"]
+- !private ["7Frogger9MenuSceneC", "addChild"]
+- ["7Frogger9MenuSceneC", "deinit"]
+- ["7Frogger9MenuSceneC", "didMove"]
+- ["7Frogger9MenuSceneC", "init"]
+- ["7Frogger9MenuSceneC", "menuDelegate"]
+- ["7Frogger9MenuSceneC", "playButton"]
+- ["7Frogger9MenuSceneC", "touchesBegan"]
+- !private ["So8NSCodingP", "CGSize"]
+- !private ["So8NSCodingP", "SKSpriteNode"]
+- !private ["So8NSCodingP", "addChild"]
+- !private ["So8NSCodingP", "contains"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "menuDelegate"]
+- !private ["So8NSCodingP", "playButton"]
+- !private ["So8NSCodingP", "red"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "CGSize"]
+- !private ["So9NSCopyingP", "SKSpriteNode"]
+- !private ["So9NSCopyingP", "addChild"]
+- !private ["So9NSCopyingP", "contains"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "menuDelegate"]
+- !private ["So9NSCopyingP", "playButton"]
+- !private ["So9NSCopyingP", "red"]
+- ["So9NSCopyingP", ""]
+- !private ["So21NSItemProviderReadingP", "red"]
+- !private ["So21NSItemProviderWritingP", "red"]
+- !private ["So8NSObjectC", "CGSize"]
+- ["So8NSObjectC", "MenuDelegate"]
+- ["So8NSObjectC", "SKSpriteNode"]
+- ["So8NSObjectC", "SKView"]
+- ["So8NSObjectC", "Set"]
+- ["So8NSObjectC", "UIEvent"]
+- ["So8NSObjectC", "UITouch"]
+- !private ["So8NSObjectC", "addChild"]
+- !private ["So8NSObjectC", "contains"]
+- ["So8NSObjectC", "didMove"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "location"]
+- ["So8NSObjectC", "menuDelegate"]
+- ["So8NSObjectC", "playButton"]
+- !private ["So8NSObjectC", "red"]
+- ["So8NSObjectC", "touchesBegan"]
+- !private ["So16NSObjectProtocolP", "CGSize"]
+- !private ["So16NSObjectProtocolP", "SKSpriteNode"]
+- !private ["So16NSObjectProtocolP", "addChild"]
+- !private ["So16NSObjectProtocolP", "contains"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "location"]
+- !private ["So16NSObjectProtocolP", "menuDelegate"]
+- !private ["So16NSObjectProtocolP", "playButton"]
+- !private ["So16NSObjectProtocolP", "red"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "red"]
+- !private ["So12SKEffectNodeC", "CGSize"]
+- ["So12SKEffectNodeC", "MenuDelegate"]
+- ["So12SKEffectNodeC", "SKSpriteNode"]
+- ["So12SKEffectNodeC", "SKView"]
+- ["So12SKEffectNodeC", "Set"]
+- ["So12SKEffectNodeC", "UIEvent"]
+- ["So12SKEffectNodeC", "UITouch"]
+- !private ["So12SKEffectNodeC", "addChild"]
+- ["So12SKEffectNodeC", "didMove"]
+- ["So12SKEffectNodeC", "init"]
+- ["So12SKEffectNodeC", "menuDelegate"]
+- ["So12SKEffectNodeC", "playButton"]
+- ["So12SKEffectNodeC", "touchesBegan"]
+- !private ["So6SKNodeC", "CGSize"]
+- ["So6SKNodeC", "MenuDelegate"]
+- ["So6SKNodeC", "SKSpriteNode"]
+- ["So6SKNodeC", "SKView"]
+- ["So6SKNodeC", "Set"]
+- ["So6SKNodeC", "UIEvent"]
+- ["So6SKNodeC", "UITouch"]
+- !private ["So6SKNodeC", "addChild"]
+- !private ["So6SKNodeC", "contains"]
+- ["So6SKNodeC", "didMove"]
+- ["So6SKNodeC", "init"]
+- ["So6SKNodeC", "menuDelegate"]
+- ["So6SKNodeC", "playButton"]
+- ["So6SKNodeC", "touchesBegan"]
+- !private ["So7SKSceneC", "CGSize"]
+- ["So7SKSceneC", "MenuDelegate"]
+- ["So7SKSceneC", "SKSpriteNode"]
+- ["So7SKSceneC", "SKView"]
+- ["So7SKSceneC", "Set"]
+- ["So7SKSceneC", "UIEvent"]
+- ["So7SKSceneC", "UITouch"]
+- !private ["So7SKSceneC", "addChild"]
+- ["So7SKSceneC", "didMove"]
+- ["So7SKSceneC", "init"]
+- ["So7SKSceneC", "menuDelegate"]
+- ["So7SKSceneC", "playButton"]
+- ["So7SKSceneC", "touchesBegan"]
+- ["So7SKSceneC", ""]
+- !private ["So12SKSpriteNodeC", "contains"]
+- !private ["So12SKSpriteNodeC", "init"]
+- !private ["So10SKWarpableP", "CGSize"]
+- !private ["So10SKWarpableP", "SKSpriteNode"]
+- !private ["So10SKWarpableP", "addChild"]
+- !private ["So10SKWarpableP", "contains"]
+- !private ["So10SKWarpableP", "init"]
+- !private ["So10SKWarpableP", "menuDelegate"]
+- !private ["So10SKWarpableP", "playButton"]
+- ["So10SKWarpableP", ""]
+- !private ["So7UIColorC", "red"]
+- !private ["So18UIFocusEnvironmentP", "CGSize"]
+- !private ["So18UIFocusEnvironmentP", "SKSpriteNode"]
+- !private ["So18UIFocusEnvironmentP", "addChild"]
+- !private ["So18UIFocusEnvironmentP", "contains"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "menuDelegate"]
+- !private ["So18UIFocusEnvironmentP", "playButton"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "CGSize"]
+- !private ["So11UIFocusItemP", "SKSpriteNode"]
+- !private ["So11UIFocusItemP", "addChild"]
+- !private ["So11UIFocusItemP", "contains"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "menuDelegate"]
+- !private ["So11UIFocusItemP", "playButton"]
+- ["So11UIFocusItemP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
+- !private ["So30UIPasteConfigurationSupportingP", "SKSpriteNode"]
+- !private ["So30UIPasteConfigurationSupportingP", "addChild"]
+- !private ["So30UIPasteConfigurationSupportingP", "contains"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "menuDelegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "playButton"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So11UIResponderC", "CGSize"]
+- ["So11UIResponderC", "MenuDelegate"]
+- ["So11UIResponderC", "SKSpriteNode"]
+- ["So11UIResponderC", "SKView"]
+- ["So11UIResponderC", "Set"]
+- ["So11UIResponderC", "UIEvent"]
+- ["So11UIResponderC", "UITouch"]
+- !private ["So11UIResponderC", "addChild"]
+- !private ["So11UIResponderC", "contains"]
+- ["So11UIResponderC", "didMove"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "menuDelegate"]
+- ["So11UIResponderC", "playButton"]
+- ["So11UIResponderC", "touchesBegan"]
+- !private ["So30UIResponderStandardEditActionsP", "CGSize"]
+- !private ["So30UIResponderStandardEditActionsP", "SKSpriteNode"]
+- !private ["So30UIResponderStandardEditActionsP", "addChild"]
+- !private ["So30UIResponderStandardEditActionsP", "contains"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "menuDelegate"]
+- !private ["So30UIResponderStandardEditActionsP", "playButton"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So7UITouchC", "location"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s26_ExpressibleByColorLiteralP", "red"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SKSpriteNode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addChild"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contains"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "location"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "menuDelegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "playButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "red"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- !private "Sb"
+- !private "SC6CGSizeV"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "So19GKSceneRootNodeTypeP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- "7Frogger12MenuDelegateP"
+- "7Frogger9MenuSceneC"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- "So12SKEffectNodeC"
+- "So6SKNodeC"
+- "So7SKSceneC"
+- !private "So12SKSpriteNodeC"
+- "So10SKWarpableP"
+- !private "So7UIColorC"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So7UITouchC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GameplayKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "9a1e16e9292f26ff8c1bd5523d0c48d6"

@@ -1,0 +1,19 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "14a78ffafdcf87f580f25646121d32cc"
+build_time: [1512849296, 496423000]
+inputs:
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Scenes/GameScene.swift": [1512849162, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Model/ObstacleNode.swift": [1512837394, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Model/HudLayer.swift": [1512847947, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Scenes/MenuScene.swift": [1512849254, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Model/ObjectOrientation.swift": [1512337569, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Model/Spawn.swift": [1512841379, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/GameViewController.swift": [1512849162, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Model/MapManager.swift": [1512847201, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Model/Ground.swift": [1512841154, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Model/PlayerNode.swift": [1512837570, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/AppDelegate.swift": [1508353073, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Model/Vehicle.swift": [1512842510, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Model/Coin.swift": [1512840362, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Model/ObjectNode.swift": [1512847947, 0]
+  "/Users/rodrigofranzoi/Documents/Apps/Frogger/Frogger/Model/ButtonNode.swift": [1512849162, 0]
