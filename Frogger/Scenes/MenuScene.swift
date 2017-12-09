@@ -15,11 +15,11 @@ protocol MenuDelegate {
 class MenuScene: SKScene, ButtonDelegate {
     
     var menuDelegate : MenuDelegate!
-    var playButton : SKSpriteNode!
+    var playButton : ButtonNode!
     
     override func didMove(to view: SKView) {
     
-        self.playButton = SKSpriteNode(texture: nil, color: .red, size: CGSize(width: 5, height: 5))
+        playButton = ButtonNode(texture: nil, size: CGSize(width: 5, height: 5), scene: self)
         self.addChild(playButton)
         
     }
