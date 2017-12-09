@@ -17,13 +17,15 @@ class MenuScene: SKScene, ButtonDelegate {
     var menuDelegate : MenuDelegate!
     var playButton : ButtonNode!
     
+    
     override func didMove(to view: SKView) {
     
-        playButton = ButtonNode(texture: nil, size: CGSize(width: 5, height: 5), scene: self)
+        self.size = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        playButton = ButtonNode(texture: nil, size: CGSize(width: 40, height: 40), scene: self)
         self.addChild(playButton)
         
     }
-    
     
     func setSelectedButton(buttonNode: ButtonNode) {
         

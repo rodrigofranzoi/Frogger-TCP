@@ -59,7 +59,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let playerY = self.player.position.y
 
         if playerY > self.camMaxPoint {
-            self.hudLayer.setScore(1)
+            self.hudLayer.setScore(0)
             self.camMaxPoint = playerY
         }
         
