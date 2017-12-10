@@ -18,6 +18,7 @@
 		2A18D1991FDD8BFC0008350A /* ScoresManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A18D1981FDD8BFC0008350A /* ScoresManager.swift */; };
 		2A3C55731FD4B62D00AC4CE6 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C55721FD4B62D00AC4CE6 /* Vehicle.swift */; };
 		2A3C557D1FD4CDD900AC4CE6 /* Frogger.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A3C557C1FD4CDD900AC4CE6 /* Frogger.json */; };
+		2A567B571FDDF2B6005A4650 /* Early GameBoy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A567B551FDDF2AF005A4650 /* Early GameBoy.ttf */; };
 		2A6BA89E1F97DBB1004B8A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA89D1F97DBB1004B8A9B /* AppDelegate.swift */; };
 		2A6BA8A41F97DBB1004B8A9B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA8A31F97DBB1004B8A9B /* GameScene.swift */; };
 		2A6BA8A61F97DBB1004B8A9B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA8A51F97DBB1004B8A9B /* GameViewController.swift */; };
@@ -46,6 +47,7 @@
 		2A18D1981FDD8BFC0008350A /* ScoresManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresManager.swift; sourceTree = "<group>"; };
 		2A3C55721FD4B62D00AC4CE6 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		2A3C557C1FD4CDD900AC4CE6 /* Frogger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Frogger.json; sourceTree = "<group>"; };
+		2A567B551FDDF2AF005A4650 /* Early GameBoy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Early GameBoy.ttf"; sourceTree = "<group>"; };
 		2A6BA89A1F97DBB1004B8A9B /* Frogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6BA89D1F97DBB1004B8A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A6BA8A31F97DBB1004B8A9B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		2AC3172E1FD4AE9B008BFFF5 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				2A567B551FDDF2AF005A4650 /* Early GameBoy.ttf */,
 				2A6BA8AA1F97DBB1004B8A9B /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -215,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A567B571FDDF2B6005A4650 /* Early GameBoy.ttf in Resources */,
 				2A18D18F1FDCD4EA0008350A /* FroggerInit.json in Resources */,
 				2A6BA8CB1F9991E7004B8A9B /* froggermap4.json in Resources */,
 				2A6BA8A91F97DBB1004B8A9B /* Main.storyboard in Resources */,

@@ -29,11 +29,11 @@ class MenuScene: SKScene, ButtonDelegate {
         
         setRecordsLabels()
         
-        let str : String = ScoresManager.getScores(rankQnt: 5)
-        print(str)
+
     }
     func setRecordsLabels(){
-        
+        let str : String = ScoresManager.getScores(rankQnt: 5)
+        print(str)
             
     }
     func setSelectedButton(buttonNode: ButtonNode) {

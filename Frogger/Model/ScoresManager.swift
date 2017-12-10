@@ -17,7 +17,6 @@ class ScoresManager  {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        
         newScore["date"] = dateFormatter.string(from: NSDate() as Date)
         
         

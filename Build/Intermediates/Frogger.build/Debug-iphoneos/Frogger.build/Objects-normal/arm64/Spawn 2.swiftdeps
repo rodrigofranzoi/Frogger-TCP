@@ -1,0 +1,695 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Spawn"
+- "DoubleSpawn"
+provides-nominal:
+- "7Frogger5SpawnC"
+- "7Frogger11DoubleSpawnC"
+provides-member:
+- ["7Frogger5SpawnC", ""]
+- ["7Frogger11DoubleSpawnC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "*"
+- !private "+"
+- !private "/"
+- "AssignmentPrecedence"
+- !private "Bike"
+- !private "Bus"
+- "CGPoint"
+- "CGSize"
+- !private "Car"
+- "Double"
+- "DoubleSpawn"
+- "Int"
+- "NSCoder"
+- "ObjectFaceOrientation"
+- "ObjectNode"
+- !private "SKAction"
+- "Spawn"
+- "String"
+- !private "StringLiteralType"
+- !private "Vehicle"
+- !private "arc4random_uniform"
+- !private "fatalError"
+- !private "~="
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["7Frogger4BikeC", "deinit"]
+- !private ["7Frogger4BikeC", "init"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["7Frogger3BusC", "deinit"]
+- !private ["7Frogger3BusC", "init"]
+- !private ["s7CVarArgP", "Bike"]
+- !private ["s7CVarArgP", "Bus"]
+- !private ["s7CVarArgP", "Car"]
+- !private ["s7CVarArgP", "Double"]
+- !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "SKAction"]
+- !private ["s7CVarArgP", "addChild"]
+- !private ["s7CVarArgP", "arc4random_uniform"]
+- !private ["s7CVarArgP", "carNumber"]
+- !private ["s7CVarArgP", "fatalError"]
+- !private ["s7CVarArgP", "getCarsInterval"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "laneDirection"]
+- !private ["s7CVarArgP", "level"]
+- !private ["s7CVarArgP", "objPosition"]
+- !private ["s7CVarArgP", "run"]
+- !private ["s7CVarArgP", "size"]
+- !private ["s7CVarArgP", "spawnCars"]
+- !private ["s7CVarArgP", "startMoving"]
+- !private ["s7CVarArgP", "wait"]
+- ["s7CVarArgP", ""]
+- !private ["7Frogger3CarC", "deinit"]
+- !private ["7Frogger3CarC", "init"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Bike"]
+- !private ["s28CustomDebugStringConvertibleP", "Bus"]
+- !private ["s28CustomDebugStringConvertibleP", "Car"]
+- !private ["s28CustomDebugStringConvertibleP", "Double"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "SKAction"]
+- !private ["s28CustomDebugStringConvertibleP", "addChild"]
+- !private ["s28CustomDebugStringConvertibleP", "arc4random_uniform"]
+- !private ["s28CustomDebugStringConvertibleP", "carNumber"]
+- !private ["s28CustomDebugStringConvertibleP", "fatalError"]
+- !private ["s28CustomDebugStringConvertibleP", "getCarsInterval"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "laneDirection"]
+- !private ["s28CustomDebugStringConvertibleP", "level"]
+- !private ["s28CustomDebugStringConvertibleP", "objPosition"]
+- !private ["s28CustomDebugStringConvertibleP", "run"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
+- !private ["s28CustomDebugStringConvertibleP", "spawnCars"]
+- !private ["s28CustomDebugStringConvertibleP", "startMoving"]
+- !private ["s28CustomDebugStringConvertibleP", "wait"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "Bike"]
+- !private ["s29CustomPlaygroundQuickLookableP", "Bus"]
+- !private ["s29CustomPlaygroundQuickLookableP", "Car"]
+- !private ["s29CustomPlaygroundQuickLookableP", "Double"]
+- !private ["s29CustomPlaygroundQuickLookableP", "Int"]
+- !private ["s29CustomPlaygroundQuickLookableP", "SKAction"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "addChild"]
+- !private ["s29CustomPlaygroundQuickLookableP", "arc4random_uniform"]
+- !private ["s29CustomPlaygroundQuickLookableP", "carNumber"]
+- !private ["s29CustomPlaygroundQuickLookableP", "fatalError"]
+- !private ["s29CustomPlaygroundQuickLookableP", "getCarsInterval"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "laneDirection"]
+- !private ["s29CustomPlaygroundQuickLookableP", "level"]
+- !private ["s29CustomPlaygroundQuickLookableP", "objPosition"]
+- !private ["s29CustomPlaygroundQuickLookableP", "run"]
+- !private ["s29CustomPlaygroundQuickLookableP", "size"]
+- !private ["s29CustomPlaygroundQuickLookableP", "spawnCars"]
+- !private ["s29CustomPlaygroundQuickLookableP", "startMoving"]
+- ["s29CustomPlaygroundQuickLookableP", ""]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Bike"]
+- !private ["s23CustomStringConvertibleP", "Bus"]
+- !private ["s23CustomStringConvertibleP", "Car"]
+- !private ["s23CustomStringConvertibleP", "Double"]
+- !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "SKAction"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addChild"]
+- !private ["s23CustomStringConvertibleP", "arc4random_uniform"]
+- !private ["s23CustomStringConvertibleP", "carNumber"]
+- !private ["s23CustomStringConvertibleP", "fatalError"]
+- !private ["s23CustomStringConvertibleP", "getCarsInterval"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "laneDirection"]
+- !private ["s23CustomStringConvertibleP", "level"]
+- !private ["s23CustomStringConvertibleP", "objPosition"]
+- !private ["s23CustomStringConvertibleP", "run"]
+- !private ["s23CustomStringConvertibleP", "size"]
+- !private ["s23CustomStringConvertibleP", "spawnCars"]
+- !private ["s23CustomStringConvertibleP", "startMoving"]
+- !private ["s23CustomStringConvertibleP", "wait"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["Sd", "init"]
+- !private ["7Frogger11DoubleSpawnC", "Bike"]
+- !private ["7Frogger11DoubleSpawnC", "Bus"]
+- ["7Frogger11DoubleSpawnC", "CGPoint"]
+- ["7Frogger11DoubleSpawnC", "CGSize"]
+- !private ["7Frogger11DoubleSpawnC", "Car"]
+- ["7Frogger11DoubleSpawnC", "Int"]
+- ["7Frogger11DoubleSpawnC", "NSCoder"]
+- ["7Frogger11DoubleSpawnC", "ObjectFaceOrientation"]
+- !private ["7Frogger11DoubleSpawnC", "SKAction"]
+- ["7Frogger11DoubleSpawnC", "String"]
+- !private ["7Frogger11DoubleSpawnC", "Vehicle"]
+- !private ["7Frogger11DoubleSpawnC", "addChild"]
+- !private ["7Frogger11DoubleSpawnC", "carNumber"]
+- ["7Frogger11DoubleSpawnC", "deinit"]
+- !private ["7Frogger11DoubleSpawnC", "fatalError"]
+- !private ["7Frogger11DoubleSpawnC", "getCarsInterval"]
+- ["7Frogger11DoubleSpawnC", "init"]
+- ["7Frogger11DoubleSpawnC", "laneDirection"]
+- !private ["7Frogger11DoubleSpawnC", "objPosition"]
+- !private ["7Frogger11DoubleSpawnC", "run"]
+- !private ["7Frogger11DoubleSpawnC", "size"]
+- ["7Frogger11DoubleSpawnC", "spawnCars"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Bike"]
+- !private ["s9EquatableP", "Bus"]
+- !private ["s9EquatableP", "Car"]
+- !private ["s9EquatableP", "Double"]
+- !private ["s9EquatableP", "Int"]
+- !private ["s9EquatableP", "SKAction"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "addChild"]
+- !private ["s9EquatableP", "arc4random_uniform"]
+- !private ["s9EquatableP", "carNumber"]
+- !private ["s9EquatableP", "fatalError"]
+- !private ["s9EquatableP", "getCarsInterval"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "laneDirection"]
+- !private ["s9EquatableP", "level"]
+- !private ["s9EquatableP", "objPosition"]
+- !private ["s9EquatableP", "run"]
+- !private ["s9EquatableP", "size"]
+- !private ["s9EquatableP", "spawnCars"]
+- !private ["s9EquatableP", "startMoving"]
+- !private ["s9EquatableP", "wait"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["s8HashableP", "Bike"]
+- !private ["s8HashableP", "Bus"]
+- !private ["s8HashableP", "Car"]
+- !private ["s8HashableP", "Double"]
+- !private ["s8HashableP", "Int"]
+- !private ["s8HashableP", "SKAction"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "addChild"]
+- !private ["s8HashableP", "arc4random_uniform"]
+- !private ["s8HashableP", "carNumber"]
+- !private ["s8HashableP", "fatalError"]
+- !private ["s8HashableP", "getCarsInterval"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "laneDirection"]
+- !private ["s8HashableP", "level"]
+- !private ["s8HashableP", "objPosition"]
+- !private ["s8HashableP", "run"]
+- !private ["s8HashableP", "size"]
+- !private ["s8HashableP", "spawnCars"]
+- !private ["s8HashableP", "startMoving"]
+- !private ["s8HashableP", "wait"]
+- ["s8HashableP", ""]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "Bike"]
+- !private ["So8NSCodingP", "Bus"]
+- !private ["So8NSCodingP", "Car"]
+- !private ["So8NSCodingP", "Double"]
+- !private ["So8NSCodingP", "Int"]
+- !private ["So8NSCodingP", "SKAction"]
+- !private ["So8NSCodingP", "addChild"]
+- !private ["So8NSCodingP", "arc4random_uniform"]
+- !private ["So8NSCodingP", "carNumber"]
+- !private ["So8NSCodingP", "fatalError"]
+- !private ["So8NSCodingP", "getCarsInterval"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "laneDirection"]
+- !private ["So8NSCodingP", "level"]
+- !private ["So8NSCodingP", "objPosition"]
+- !private ["So8NSCodingP", "run"]
+- !private ["So8NSCodingP", "size"]
+- !private ["So8NSCodingP", "spawnCars"]
+- !private ["So8NSCodingP", "startMoving"]
+- !private ["So8NSCodingP", "wait"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "Bike"]
+- !private ["So9NSCopyingP", "Bus"]
+- !private ["So9NSCopyingP", "Car"]
+- !private ["So9NSCopyingP", "Double"]
+- !private ["So9NSCopyingP", "Int"]
+- !private ["So9NSCopyingP", "SKAction"]
+- !private ["So9NSCopyingP", "addChild"]
+- !private ["So9NSCopyingP", "arc4random_uniform"]
+- !private ["So9NSCopyingP", "carNumber"]
+- !private ["So9NSCopyingP", "fatalError"]
+- !private ["So9NSCopyingP", "getCarsInterval"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "laneDirection"]
+- !private ["So9NSCopyingP", "level"]
+- !private ["So9NSCopyingP", "objPosition"]
+- !private ["So9NSCopyingP", "run"]
+- !private ["So9NSCopyingP", "size"]
+- !private ["So9NSCopyingP", "spawnCars"]
+- !private ["So9NSCopyingP", "startMoving"]
+- !private ["So9NSCopyingP", "wait"]
+- ["So9NSCopyingP", ""]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "Bike"]
+- !private ["So8NSObjectC", "Bus"]
+- ["So8NSObjectC", "CGPoint"]
+- ["So8NSObjectC", "CGSize"]
+- !private ["So8NSObjectC", "Car"]
+- ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "NSCoder"]
+- ["So8NSObjectC", "ObjectFaceOrientation"]
+- !private ["So8NSObjectC", "SKAction"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "Vehicle"]
+- !private ["So8NSObjectC", "addChild"]
+- !private ["So8NSObjectC", "arc4random_uniform"]
+- ["So8NSObjectC", "carNumber"]
+- !private ["So8NSObjectC", "fatalError"]
+- ["So8NSObjectC", "getCarsInterval"]
+- ["So8NSObjectC", "laneDirection"]
+- ["So8NSObjectC", "level"]
+- ["So8NSObjectC", "objPosition"]
+- !private ["So8NSObjectC", "run"]
+- !private ["So8NSObjectC", "size"]
+- ["So8NSObjectC", "spawnCars"]
+- !private ["So8NSObjectC", "startMoving"]
+- !private ["So8NSObjectC", "wait"]
+- !private ["So16NSObjectProtocolP", "Bike"]
+- !private ["So16NSObjectProtocolP", "Bus"]
+- !private ["So16NSObjectProtocolP", "Car"]
+- !private ["So16NSObjectProtocolP", "Double"]
+- !private ["So16NSObjectProtocolP", "Int"]
+- !private ["So16NSObjectProtocolP", "SKAction"]
+- !private ["So16NSObjectProtocolP", "addChild"]
+- !private ["So16NSObjectProtocolP", "arc4random_uniform"]
+- !private ["So16NSObjectProtocolP", "carNumber"]
+- !private ["So16NSObjectProtocolP", "fatalError"]
+- !private ["So16NSObjectProtocolP", "getCarsInterval"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "laneDirection"]
+- !private ["So16NSObjectProtocolP", "level"]
+- !private ["So16NSObjectProtocolP", "objPosition"]
+- !private ["So16NSObjectProtocolP", "run"]
+- !private ["So16NSObjectProtocolP", "size"]
+- !private ["So16NSObjectProtocolP", "spawnCars"]
+- !private ["So16NSObjectProtocolP", "startMoving"]
+- !private ["So16NSObjectProtocolP", "wait"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s7NumericP", "init"]
+- !private ["7Frogger10ObjectNodeC", "Bike"]
+- !private ["7Frogger10ObjectNodeC", "Bus"]
+- ["7Frogger10ObjectNodeC", "CGPoint"]
+- ["7Frogger10ObjectNodeC", "CGSize"]
+- !private ["7Frogger10ObjectNodeC", "Car"]
+- ["7Frogger10ObjectNodeC", "Double"]
+- ["7Frogger10ObjectNodeC", "Int"]
+- ["7Frogger10ObjectNodeC", "NSCoder"]
+- ["7Frogger10ObjectNodeC", "ObjectFaceOrientation"]
+- !private ["7Frogger10ObjectNodeC", "SKAction"]
+- ["7Frogger10ObjectNodeC", "String"]
+- !private ["7Frogger10ObjectNodeC", "Vehicle"]
+- !private ["7Frogger10ObjectNodeC", "addChild"]
+- !private ["7Frogger10ObjectNodeC", "arc4random_uniform"]
+- ["7Frogger10ObjectNodeC", "carNumber"]
+- !private ["7Frogger10ObjectNodeC", "fatalError"]
+- ["7Frogger10ObjectNodeC", "getCarsInterval"]
+- ["7Frogger10ObjectNodeC", "init"]
+- ["7Frogger10ObjectNodeC", "laneDirection"]
+- ["7Frogger10ObjectNodeC", "level"]
+- ["7Frogger10ObjectNodeC", "objPosition"]
+- !private ["7Frogger10ObjectNodeC", "run"]
+- !private ["7Frogger10ObjectNodeC", "size"]
+- ["7Frogger10ObjectNodeC", "spawnCars"]
+- !private ["7Frogger10ObjectNodeC", "startMoving"]
+- ["7Frogger10ObjectNodeC", ""]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["So8SKActionC", "wait"]
+- !private ["So6SKNodeC", "Bike"]
+- !private ["So6SKNodeC", "Bus"]
+- ["So6SKNodeC", "CGPoint"]
+- ["So6SKNodeC", "CGSize"]
+- !private ["So6SKNodeC", "Car"]
+- ["So6SKNodeC", "Double"]
+- ["So6SKNodeC", "Int"]
+- ["So6SKNodeC", "NSCoder"]
+- ["So6SKNodeC", "ObjectFaceOrientation"]
+- !private ["So6SKNodeC", "SKAction"]
+- ["So6SKNodeC", "String"]
+- !private ["So6SKNodeC", "Vehicle"]
+- !private ["So6SKNodeC", "addChild"]
+- !private ["So6SKNodeC", "arc4random_uniform"]
+- ["So6SKNodeC", "carNumber"]
+- !private ["So6SKNodeC", "fatalError"]
+- ["So6SKNodeC", "getCarsInterval"]
+- ["So6SKNodeC", "laneDirection"]
+- ["So6SKNodeC", "level"]
+- ["So6SKNodeC", "objPosition"]
+- !private ["So6SKNodeC", "run"]
+- !private ["So6SKNodeC", "size"]
+- ["So6SKNodeC", "spawnCars"]
+- !private ["So6SKNodeC", "startMoving"]
+- !private ["So12SKSpriteNodeC", "Bike"]
+- !private ["So12SKSpriteNodeC", "Bus"]
+- ["So12SKSpriteNodeC", "CGPoint"]
+- ["So12SKSpriteNodeC", "CGSize"]
+- !private ["So12SKSpriteNodeC", "Car"]
+- ["So12SKSpriteNodeC", "Double"]
+- ["So12SKSpriteNodeC", "Int"]
+- ["So12SKSpriteNodeC", "NSCoder"]
+- ["So12SKSpriteNodeC", "ObjectFaceOrientation"]
+- !private ["So12SKSpriteNodeC", "SKAction"]
+- ["So12SKSpriteNodeC", "String"]
+- !private ["So12SKSpriteNodeC", "Vehicle"]
+- !private ["So12SKSpriteNodeC", "addChild"]
+- !private ["So12SKSpriteNodeC", "arc4random_uniform"]
+- ["So12SKSpriteNodeC", "carNumber"]
+- !private ["So12SKSpriteNodeC", "fatalError"]
+- ["So12SKSpriteNodeC", "getCarsInterval"]
+- ["So12SKSpriteNodeC", "laneDirection"]
+- ["So12SKSpriteNodeC", "level"]
+- ["So12SKSpriteNodeC", "objPosition"]
+- !private ["So12SKSpriteNodeC", "run"]
+- !private ["So12SKSpriteNodeC", "size"]
+- ["So12SKSpriteNodeC", "spawnCars"]
+- !private ["So12SKSpriteNodeC", "startMoving"]
+- !private ["So10SKWarpableP", "Bike"]
+- !private ["So10SKWarpableP", "Bus"]
+- !private ["So10SKWarpableP", "Car"]
+- !private ["So10SKWarpableP", "Double"]
+- !private ["So10SKWarpableP", "Int"]
+- !private ["So10SKWarpableP", "SKAction"]
+- !private ["So10SKWarpableP", "addChild"]
+- !private ["So10SKWarpableP", "arc4random_uniform"]
+- !private ["So10SKWarpableP", "carNumber"]
+- !private ["So10SKWarpableP", "fatalError"]
+- !private ["So10SKWarpableP", "getCarsInterval"]
+- !private ["So10SKWarpableP", "init"]
+- !private ["So10SKWarpableP", "laneDirection"]
+- !private ["So10SKWarpableP", "level"]
+- !private ["So10SKWarpableP", "objPosition"]
+- !private ["So10SKWarpableP", "run"]
+- !private ["So10SKWarpableP", "size"]
+- !private ["So10SKWarpableP", "spawnCars"]
+- !private ["So10SKWarpableP", "startMoving"]
+- ["So10SKWarpableP", ""]
+- !private ["s8SequenceP", "init"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["7Frogger5SpawnC", "Bike"]
+- !private ["7Frogger5SpawnC", "Bus"]
+- ["7Frogger5SpawnC", "CGPoint"]
+- ["7Frogger5SpawnC", "CGSize"]
+- !private ["7Frogger5SpawnC", "Car"]
+- ["7Frogger5SpawnC", "Double"]
+- ["7Frogger5SpawnC", "Int"]
+- ["7Frogger5SpawnC", "NSCoder"]
+- ["7Frogger5SpawnC", "ObjectFaceOrientation"]
+- !private ["7Frogger5SpawnC", "SKAction"]
+- ["7Frogger5SpawnC", "String"]
+- !private ["7Frogger5SpawnC", "Vehicle"]
+- !private ["7Frogger5SpawnC", "addChild"]
+- !private ["7Frogger5SpawnC", "arc4random_uniform"]
+- ["7Frogger5SpawnC", "carNumber"]
+- ["7Frogger5SpawnC", "deinit"]
+- !private ["7Frogger5SpawnC", "fatalError"]
+- ["7Frogger5SpawnC", "getCarsInterval"]
+- ["7Frogger5SpawnC", "init"]
+- ["7Frogger5SpawnC", "laneDirection"]
+- ["7Frogger5SpawnC", "level"]
+- ["7Frogger5SpawnC", "objPosition"]
+- !private ["7Frogger5SpawnC", "run"]
+- !private ["7Frogger5SpawnC", "size"]
+- ["7Frogger5SpawnC", "spawnCars"]
+- ["7Frogger5SpawnC", ""]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So18UIFocusEnvironmentP", "Bike"]
+- !private ["So18UIFocusEnvironmentP", "Bus"]
+- !private ["So18UIFocusEnvironmentP", "Car"]
+- !private ["So18UIFocusEnvironmentP", "Double"]
+- !private ["So18UIFocusEnvironmentP", "Int"]
+- !private ["So18UIFocusEnvironmentP", "SKAction"]
+- !private ["So18UIFocusEnvironmentP", "addChild"]
+- !private ["So18UIFocusEnvironmentP", "arc4random_uniform"]
+- !private ["So18UIFocusEnvironmentP", "carNumber"]
+- !private ["So18UIFocusEnvironmentP", "fatalError"]
+- !private ["So18UIFocusEnvironmentP", "getCarsInterval"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "laneDirection"]
+- !private ["So18UIFocusEnvironmentP", "level"]
+- !private ["So18UIFocusEnvironmentP", "objPosition"]
+- !private ["So18UIFocusEnvironmentP", "run"]
+- !private ["So18UIFocusEnvironmentP", "size"]
+- !private ["So18UIFocusEnvironmentP", "spawnCars"]
+- !private ["So18UIFocusEnvironmentP", "startMoving"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "Bike"]
+- !private ["So11UIFocusItemP", "Bus"]
+- !private ["So11UIFocusItemP", "Car"]
+- !private ["So11UIFocusItemP", "Double"]
+- !private ["So11UIFocusItemP", "Int"]
+- !private ["So11UIFocusItemP", "SKAction"]
+- !private ["So11UIFocusItemP", "addChild"]
+- !private ["So11UIFocusItemP", "arc4random_uniform"]
+- !private ["So11UIFocusItemP", "carNumber"]
+- !private ["So11UIFocusItemP", "fatalError"]
+- !private ["So11UIFocusItemP", "getCarsInterval"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "laneDirection"]
+- !private ["So11UIFocusItemP", "level"]
+- !private ["So11UIFocusItemP", "objPosition"]
+- !private ["So11UIFocusItemP", "run"]
+- !private ["So11UIFocusItemP", "size"]
+- !private ["So11UIFocusItemP", "spawnCars"]
+- !private ["So11UIFocusItemP", "startMoving"]
+- ["So11UIFocusItemP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "Bike"]
+- !private ["So30UIPasteConfigurationSupportingP", "Bus"]
+- !private ["So30UIPasteConfigurationSupportingP", "Car"]
+- !private ["So30UIPasteConfigurationSupportingP", "Double"]
+- !private ["So30UIPasteConfigurationSupportingP", "Int"]
+- !private ["So30UIPasteConfigurationSupportingP", "SKAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "addChild"]
+- !private ["So30UIPasteConfigurationSupportingP", "arc4random_uniform"]
+- !private ["So30UIPasteConfigurationSupportingP", "carNumber"]
+- !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
+- !private ["So30UIPasteConfigurationSupportingP", "getCarsInterval"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "laneDirection"]
+- !private ["So30UIPasteConfigurationSupportingP", "level"]
+- !private ["So30UIPasteConfigurationSupportingP", "objPosition"]
+- !private ["So30UIPasteConfigurationSupportingP", "run"]
+- !private ["So30UIPasteConfigurationSupportingP", "size"]
+- !private ["So30UIPasteConfigurationSupportingP", "spawnCars"]
+- !private ["So30UIPasteConfigurationSupportingP", "startMoving"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So11UIResponderC", "Bike"]
+- !private ["So11UIResponderC", "Bus"]
+- ["So11UIResponderC", "CGPoint"]
+- ["So11UIResponderC", "CGSize"]
+- !private ["So11UIResponderC", "Car"]
+- ["So11UIResponderC", "Double"]
+- ["So11UIResponderC", "Int"]
+- ["So11UIResponderC", "NSCoder"]
+- ["So11UIResponderC", "ObjectFaceOrientation"]
+- !private ["So11UIResponderC", "SKAction"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "Vehicle"]
+- !private ["So11UIResponderC", "addChild"]
+- !private ["So11UIResponderC", "arc4random_uniform"]
+- ["So11UIResponderC", "carNumber"]
+- !private ["So11UIResponderC", "fatalError"]
+- ["So11UIResponderC", "getCarsInterval"]
+- ["So11UIResponderC", "laneDirection"]
+- ["So11UIResponderC", "level"]
+- ["So11UIResponderC", "objPosition"]
+- !private ["So11UIResponderC", "run"]
+- !private ["So11UIResponderC", "size"]
+- ["So11UIResponderC", "spawnCars"]
+- !private ["So11UIResponderC", "startMoving"]
+- !private ["So30UIResponderStandardEditActionsP", "Bike"]
+- !private ["So30UIResponderStandardEditActionsP", "Bus"]
+- !private ["So30UIResponderStandardEditActionsP", "Car"]
+- !private ["So30UIResponderStandardEditActionsP", "Double"]
+- !private ["So30UIResponderStandardEditActionsP", "Int"]
+- !private ["So30UIResponderStandardEditActionsP", "SKAction"]
+- !private ["So30UIResponderStandardEditActionsP", "addChild"]
+- !private ["So30UIResponderStandardEditActionsP", "arc4random_uniform"]
+- !private ["So30UIResponderStandardEditActionsP", "carNumber"]
+- !private ["So30UIResponderStandardEditActionsP", "fatalError"]
+- !private ["So30UIResponderStandardEditActionsP", "getCarsInterval"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "laneDirection"]
+- !private ["So30UIResponderStandardEditActionsP", "level"]
+- !private ["So30UIResponderStandardEditActionsP", "objPosition"]
+- !private ["So30UIResponderStandardEditActionsP", "run"]
+- !private ["So30UIResponderStandardEditActionsP", "size"]
+- !private ["So30UIResponderStandardEditActionsP", "spawnCars"]
+- !private ["So30UIResponderStandardEditActionsP", "startMoving"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["7Frogger7VehicleC", "startMoving"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Bike"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Bus"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Car"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SKAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addChild"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "arc4random_uniform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "carNumber"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getCarsInterval"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "laneDirection"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "level"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "objPosition"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "run"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "spawnCars"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startMoving"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "wait"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "7Frogger4BikeC"
+- !private "s19BinaryFloatingPointP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "7Frogger3BusC"
+- "s7CVarArgP"
+- !private "7Frogger3CarC"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "Sd"
+- "7Frogger11DoubleSpawnC"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "s13FloatingPointP"
+- "s8HashableP"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s7NumericP"
+- "7Frogger10ObjectNodeC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "So8SKActionC"
+- "So6SKNodeC"
+- "So12SKSpriteNodeC"
+- "So10SKWarpableP"
+- !private "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- "7Frogger5SpawnC"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "7Frogger7VehicleC"
+- !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GameplayKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "d3215662bf4c38737f04806dec0b7c4a"
