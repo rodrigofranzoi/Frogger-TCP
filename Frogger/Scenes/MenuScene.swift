@@ -32,8 +32,7 @@ class MenuScene: SKScene, ButtonDelegate {
     }
     func setRecordsLabels(){
         
-        
-    
+            
     }
     func setSelectedButton(buttonNode: ButtonNode) {
         

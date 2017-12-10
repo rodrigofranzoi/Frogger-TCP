@@ -230,6 +230,17 @@ SWIFT_CLASS("_TtC7Frogger3Bus")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITouch;
+@class UIEvent;
+
+SWIFT_CLASS("_TtC7Frogger10ButtonNode")
+@interface ButtonNode : SKSpriteNode
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (nonnull instancetype)initWithTexture:(SKTexture * _Nullable)texture color:(UIColor * _Nonnull)color size:(CGSize)size SWIFT_UNAVAILABLE;
+@end
+
 
 SWIFT_CLASS("_TtC7Frogger3Car")
 @interface Car : Vehicle
@@ -239,6 +250,18 @@ SWIFT_CLASS("_TtC7Frogger3Car")
 
 SWIFT_CLASS("_TtC7Frogger4Coin")
 @interface Coin : ObjectNode
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Frogger5Spawn")
+@interface Spawn : ObjectNode
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Frogger11DoubleSpawn")
+@interface DoubleSpawn : Spawn
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -293,13 +316,10 @@ SWIFT_CLASS("_TtC7Frogger8HudLayer")
 - (nonnull instancetype)initWithTexture:(SKTexture * _Nullable)texture color:(UIColor * _Nonnull)color size:(CGSize)size SWIFT_UNAVAILABLE;
 @end
 
-@class UITouch;
-@class UIEvent;
 
 SWIFT_CLASS("_TtC7Frogger9MenuScene")
 @interface MenuScene : SKScene
 - (void)didMoveToView:(SKView * _Nonnull)view;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithSize:(CGSize)size OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -318,11 +338,6 @@ SWIFT_CLASS("_TtC7Frogger10PlayerNode")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC7Frogger5Spawn")
-@interface Spawn : ObjectNode
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 SWIFT_MODULE_NAMESPACE_POP

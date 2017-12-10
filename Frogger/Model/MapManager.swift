@@ -18,21 +18,18 @@ class MapManager {
     
     var delegate : MapDelegate?
     
-    var mapName : String
+    var yPosition : CGFloat = 0.0
+    var xPosition : CGFloat = 0.0
+    var lastIndex : Int     = 0
     
-    init(mapName: String) {
-        self.mapName = mapName
-    }
-    
-    
-    public func loadMap() {
+    public func loadMap(mapName : String = "FroggerInit") {
         if let gamePhase = loadGame(named: mapName) {
             
             let tileHeight = gamePhase["tileheight"] as? Int ?? 32
             let tileWidth  = gamePhase["tilewidth"] as? Int ?? 32
             
-            let mapHeight = gamePhase["height"] as? Int ?? 20
-            let mapWidth  = gamePhase["width"] as? Int ?? 15
+            let mapHeight = gamePhase["height"] as? Int ?? 70
+            let mapWidth  = gamePhase["width"] as? Int ?? 14
             
             self.delegate?.setSize(size: CGSize(width: mapWidth * tileWidth, height: mapHeight * tileHeight))
             
@@ -45,8 +42,10 @@ class MapManager {
                             
                             let spriteSize = CGSize(width: tileWidth, height: tileHeight)
                             
-                            let yPosition = spriteSize.height * CGFloat(Int(index/mapWidth))
-                            let xPosition = spriteSize.width * CGFloat(index % mapWidth)
+                            let newIndex = self.lastIndex + index
+                            
+                            self.yPosition = spriteSize.height * CGFloat(Int(newIndex/mapWidth))
+                            self.xPosition = spriteSize.width * CGFloat(newIndex % mapWidth)
                             let position =  CGPoint(x: xPosition, y: yPosition)
                             
                             self.delegate?.nodeForMatrix(mapHeight: mapHeight, mapWidth: mapWidth, index: index, objCode: obj, spriteSize: spriteSize, position: position, layerName: name)
@@ -54,6 +53,7 @@ class MapManager {
                         }
                     }
                 }
+                self.lastIndex += (mapHeight * mapWidth)
             }
         }
     }

@@ -12,22 +12,25 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "%"
 - !private "*"
+- !private "+"
+- !private "+="
 - !private "/"
 - !private "??"
 - "AssignmentPrecedence"
 - !private "Bundle"
-- !private "CGFloat"
+- "CGFloat"
 - "CGPoint"
 - "CGSize"
 - "CastingPrecedence"
 - !private "Data"
+- "FloatLiteralType"
 - "Int"
-- !private "IntegerLiteralType"
+- "IntegerLiteralType"
 - !private "JSONSerialization"
 - "MapDelegate"
 - "MapManager"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - !private "URL"
 depends-member:
 - !private ["Sa", "enumerated"]
@@ -133,11 +136,11 @@ depends-member:
 - ["7Frogger11MapDelegateP", "nodeForMatrix"]
 - ["7Frogger11MapDelegateP", "setSize"]
 - !private ["7Frogger10MapManagerC", "Bundle"]
-- !private ["7Frogger10MapManagerC", "CGFloat"]
+- ["7Frogger10MapManagerC", "CGFloat"]
 - !private ["7Frogger10MapManagerC", "CGPoint"]
 - !private ["7Frogger10MapManagerC", "CGSize"]
 - !private ["7Frogger10MapManagerC", "Data"]
-- !private ["7Frogger10MapManagerC", "Int"]
+- ["7Frogger10MapManagerC", "Int"]
 - !private ["7Frogger10MapManagerC", "JSONSerialization"]
 - ["7Frogger10MapManagerC", "MapDelegate"]
 - ["7Frogger10MapManagerC", "String"]
@@ -145,9 +148,11 @@ depends-member:
 - ["7Frogger10MapManagerC", "deinit"]
 - ["7Frogger10MapManagerC", "delegate"]
 - ["7Frogger10MapManagerC", "init"]
+- ["7Frogger10MapManagerC", "lastIndex"]
 - !private ["7Frogger10MapManagerC", "loadGame"]
 - ["7Frogger10MapManagerC", "loadMap"]
-- ["7Frogger10MapManagerC", "mapName"]
+- ["7Frogger10MapManagerC", "xPosition"]
+- ["7Frogger10MapManagerC", "yPosition"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s17MutableCollectionP", "enumerated"]
 - !private ["s17MutableCollectionP", "init"]
@@ -352,4 +357,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SpriteKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GameplayKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "12bb5bd36a9db52fe2fdcb1ddaa0a21f"
+interface-hash: "a35ed46b4a12c10f5d58b4ca590b76ff"

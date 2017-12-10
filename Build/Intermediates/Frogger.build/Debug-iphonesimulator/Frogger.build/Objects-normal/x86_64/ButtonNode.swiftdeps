@@ -1,0 +1,484 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ButtonDelegate"
+- "ButtonNode"
+provides-nominal:
+- "7Frogger14ButtonDelegateP"
+- "7Frogger10ButtonNodeC"
+provides-member:
+- ["7Frogger14ButtonDelegateP", ""]
+- ["7Frogger10ButtonNodeC", ""]
+provides-dynamic-lookup:
+- "touchesBegan"
+- "touchesEnded"
+depends-top-level:
+- !private "!"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "ButtonDelegate"
+- "ButtonNode"
+- "CGSize"
+- "NSCoder"
+- !private "SKAction"
+- "SKSpriteNode"
+- "SKTexture"
+- "Set"
+- !private "StringLiteralType"
+- "UIEvent"
+- "UITouch"
+- !private "fatalError"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["7Frogger14ButtonDelegateP", "ButtonNode"]
+- ["7Frogger14ButtonDelegateP", "setDeselectedButton"]
+- ["7Frogger14ButtonDelegateP", "setSelectedButton"]
+- ["7Frogger10ButtonNodeC", "Bool"]
+- ["7Frogger10ButtonNodeC", "ButtonDelegate"]
+- ["7Frogger10ButtonNodeC", "CGSize"]
+- ["7Frogger10ButtonNodeC", "NSCoder"]
+- !private ["7Frogger10ButtonNodeC", "SKAction"]
+- ["7Frogger10ButtonNodeC", "SKTexture"]
+- ["7Frogger10ButtonNodeC", "Set"]
+- ["7Frogger10ButtonNodeC", "UIEvent"]
+- ["7Frogger10ButtonNodeC", "UITouch"]
+- !private ["7Frogger10ButtonNodeC", "color"]
+- ["7Frogger10ButtonNodeC", "deinit"]
+- !private ["7Frogger10ButtonNodeC", "delegate"]
+- ["7Frogger10ButtonNodeC", "deselect"]
+- !private ["7Frogger10ButtonNodeC", "fatalError"]
+- ["7Frogger10ButtonNodeC", "init"]
+- ["7Frogger10ButtonNodeC", "isSelected"]
+- !private ["7Frogger10ButtonNodeC", "isUserInteractionEnabled"]
+- !private ["7Frogger10ButtonNodeC", "run"]
+- !private ["7Frogger10ButtonNodeC", "select"]
+- ["7Frogger10ButtonNodeC", "selectButton"]
+- !private ["7Frogger10ButtonNodeC", "selected"]
+- ["7Frogger10ButtonNodeC", "touchesBegan"]
+- ["7Frogger10ButtonNodeC", "touchesEnded"]
+- !private ["s7CVarArgP", "SKAction"]
+- !private ["s7CVarArgP", "color"]
+- !private ["s7CVarArgP", "cyan"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "deselect"]
+- !private ["s7CVarArgP", "fatalError"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isUserInteractionEnabled"]
+- !private ["s7CVarArgP", "run"]
+- !private ["s7CVarArgP", "scale"]
+- !private ["s7CVarArgP", "select"]
+- !private ["s7CVarArgP", "selected"]
+- !private ["s7CVarArgP", "yellow"]
+- ["s7CVarArgP", ""]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "SKAction"]
+- !private ["s28CustomDebugStringConvertibleP", "color"]
+- !private ["s28CustomDebugStringConvertibleP", "cyan"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "deselect"]
+- !private ["s28CustomDebugStringConvertibleP", "fatalError"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isUserInteractionEnabled"]
+- !private ["s28CustomDebugStringConvertibleP", "run"]
+- !private ["s28CustomDebugStringConvertibleP", "scale"]
+- !private ["s28CustomDebugStringConvertibleP", "select"]
+- !private ["s28CustomDebugStringConvertibleP", "selected"]
+- !private ["s28CustomDebugStringConvertibleP", "yellow"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "SKAction"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "color"]
+- !private ["s29CustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s29CustomPlaygroundQuickLookableP", "deselect"]
+- !private ["s29CustomPlaygroundQuickLookableP", "fatalError"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "isUserInteractionEnabled"]
+- !private ["s29CustomPlaygroundQuickLookableP", "run"]
+- !private ["s29CustomPlaygroundQuickLookableP", "select"]
+- !private ["s29CustomPlaygroundQuickLookableP", "selected"]
+- ["s29CustomPlaygroundQuickLookableP", ""]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "SKAction"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "color"]
+- !private ["s23CustomStringConvertibleP", "cyan"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "deselect"]
+- !private ["s23CustomStringConvertibleP", "fatalError"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isUserInteractionEnabled"]
+- !private ["s23CustomStringConvertibleP", "run"]
+- !private ["s23CustomStringConvertibleP", "scale"]
+- !private ["s23CustomStringConvertibleP", "select"]
+- !private ["s23CustomStringConvertibleP", "selected"]
+- !private ["s23CustomStringConvertibleP", "yellow"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "SKAction"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "color"]
+- !private ["s9EquatableP", "cyan"]
+- !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "deselect"]
+- !private ["s9EquatableP", "fatalError"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isUserInteractionEnabled"]
+- !private ["s9EquatableP", "run"]
+- !private ["s9EquatableP", "scale"]
+- !private ["s9EquatableP", "select"]
+- !private ["s9EquatableP", "selected"]
+- !private ["s9EquatableP", "yellow"]
+- ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "SKAction"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "color"]
+- !private ["s8HashableP", "cyan"]
+- !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "deselect"]
+- !private ["s8HashableP", "fatalError"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isUserInteractionEnabled"]
+- !private ["s8HashableP", "run"]
+- !private ["s8HashableP", "scale"]
+- !private ["s8HashableP", "select"]
+- !private ["s8HashableP", "selected"]
+- !private ["s8HashableP", "yellow"]
+- ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "SKAction"]
+- !private ["So8NSCodingP", "color"]
+- !private ["So8NSCodingP", "cyan"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "deselect"]
+- !private ["So8NSCodingP", "fatalError"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isUserInteractionEnabled"]
+- !private ["So8NSCodingP", "run"]
+- !private ["So8NSCodingP", "scale"]
+- !private ["So8NSCodingP", "select"]
+- !private ["So8NSCodingP", "selected"]
+- !private ["So8NSCodingP", "yellow"]
+- ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "SKAction"]
+- !private ["So9NSCopyingP", "color"]
+- !private ["So9NSCopyingP", "cyan"]
+- !private ["So9NSCopyingP", "delegate"]
+- !private ["So9NSCopyingP", "deselect"]
+- !private ["So9NSCopyingP", "fatalError"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "isUserInteractionEnabled"]
+- !private ["So9NSCopyingP", "run"]
+- !private ["So9NSCopyingP", "scale"]
+- !private ["So9NSCopyingP", "select"]
+- !private ["So9NSCopyingP", "selected"]
+- !private ["So9NSCopyingP", "yellow"]
+- ["So9NSCopyingP", ""]
+- !private ["So21NSItemProviderReadingP", "cyan"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "yellow"]
+- !private ["So21NSItemProviderWritingP", "cyan"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "yellow"]
+- !private ["So16NSMutableCopyingP", "init"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "ButtonDelegate"]
+- ["So8NSObjectC", "CGSize"]
+- ["So8NSObjectC", "NSCoder"]
+- !private ["So8NSObjectC", "SKAction"]
+- ["So8NSObjectC", "SKTexture"]
+- ["So8NSObjectC", "Set"]
+- ["So8NSObjectC", "UIEvent"]
+- ["So8NSObjectC", "UITouch"]
+- !private ["So8NSObjectC", "color"]
+- !private ["So8NSObjectC", "cyan"]
+- ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "deselect"]
+- !private ["So8NSObjectC", "fatalError"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "isSelected"]
+- !private ["So8NSObjectC", "isUserInteractionEnabled"]
+- !private ["So8NSObjectC", "run"]
+- !private ["So8NSObjectC", "scale"]
+- ["So8NSObjectC", "select"]
+- ["So8NSObjectC", "selectButton"]
+- ["So8NSObjectC", "selected"]
+- ["So8NSObjectC", "touchesBegan"]
+- ["So8NSObjectC", "touchesEnded"]
+- !private ["So8NSObjectC", "yellow"]
+- !private ["So16NSObjectProtocolP", "SKAction"]
+- !private ["So16NSObjectProtocolP", "color"]
+- !private ["So16NSObjectProtocolP", "cyan"]
+- !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "deselect"]
+- !private ["So16NSObjectProtocolP", "fatalError"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isUserInteractionEnabled"]
+- !private ["So16NSObjectProtocolP", "run"]
+- !private ["So16NSObjectProtocolP", "scale"]
+- !private ["So16NSObjectProtocolP", "select"]
+- !private ["So16NSObjectProtocolP", "selected"]
+- !private ["So16NSObjectProtocolP", "yellow"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So14NSSecureCodingP", "cyan"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "yellow"]
+- !private ["So8NSStringC", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["So8SKActionC", "scale"]
+- ["So6SKNodeC", "Bool"]
+- ["So6SKNodeC", "ButtonDelegate"]
+- ["So6SKNodeC", "CGSize"]
+- ["So6SKNodeC", "NSCoder"]
+- !private ["So6SKNodeC", "SKAction"]
+- ["So6SKNodeC", "SKTexture"]
+- ["So6SKNodeC", "Set"]
+- ["So6SKNodeC", "UIEvent"]
+- ["So6SKNodeC", "UITouch"]
+- !private ["So6SKNodeC", "color"]
+- ["So6SKNodeC", "delegate"]
+- ["So6SKNodeC", "deselect"]
+- !private ["So6SKNodeC", "fatalError"]
+- ["So6SKNodeC", "init"]
+- ["So6SKNodeC", "isSelected"]
+- !private ["So6SKNodeC", "isUserInteractionEnabled"]
+- !private ["So6SKNodeC", "run"]
+- ["So6SKNodeC", "select"]
+- ["So6SKNodeC", "selectButton"]
+- ["So6SKNodeC", "selected"]
+- ["So6SKNodeC", "touchesBegan"]
+- ["So6SKNodeC", "touchesEnded"]
+- ["So12SKSpriteNodeC", "Bool"]
+- ["So12SKSpriteNodeC", "ButtonDelegate"]
+- ["So12SKSpriteNodeC", "CGSize"]
+- ["So12SKSpriteNodeC", "NSCoder"]
+- !private ["So12SKSpriteNodeC", "SKAction"]
+- ["So12SKSpriteNodeC", "SKTexture"]
+- ["So12SKSpriteNodeC", "Set"]
+- ["So12SKSpriteNodeC", "UIEvent"]
+- ["So12SKSpriteNodeC", "UITouch"]
+- !private ["So12SKSpriteNodeC", "color"]
+- ["So12SKSpriteNodeC", "delegate"]
+- ["So12SKSpriteNodeC", "deselect"]
+- !private ["So12SKSpriteNodeC", "fatalError"]
+- ["So12SKSpriteNodeC", "init"]
+- ["So12SKSpriteNodeC", "isSelected"]
+- !private ["So12SKSpriteNodeC", "isUserInteractionEnabled"]
+- !private ["So12SKSpriteNodeC", "run"]
+- ["So12SKSpriteNodeC", "select"]
+- ["So12SKSpriteNodeC", "selectButton"]
+- ["So12SKSpriteNodeC", "selected"]
+- ["So12SKSpriteNodeC", "touchesBegan"]
+- ["So12SKSpriteNodeC", "touchesEnded"]
+- ["So12SKSpriteNodeC", ""]
+- !private ["So10SKWarpableP", "SKAction"]
+- !private ["So10SKWarpableP", "color"]
+- !private ["So10SKWarpableP", "delegate"]
+- !private ["So10SKWarpableP", "deselect"]
+- !private ["So10SKWarpableP", "fatalError"]
+- !private ["So10SKWarpableP", "init"]
+- !private ["So10SKWarpableP", "isUserInteractionEnabled"]
+- !private ["So10SKWarpableP", "run"]
+- !private ["So10SKWarpableP", "select"]
+- !private ["So10SKWarpableP", "selected"]
+- ["So10SKWarpableP", ""]
+- !private ["s8SequenceP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So7UIColorC", "cyan"]
+- !private ["So7UIColorC", "yellow"]
+- !private ["So18UIFocusEnvironmentP", "SKAction"]
+- !private ["So18UIFocusEnvironmentP", "color"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "deselect"]
+- !private ["So18UIFocusEnvironmentP", "fatalError"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isUserInteractionEnabled"]
+- !private ["So18UIFocusEnvironmentP", "run"]
+- !private ["So18UIFocusEnvironmentP", "select"]
+- !private ["So18UIFocusEnvironmentP", "selected"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "SKAction"]
+- !private ["So11UIFocusItemP", "color"]
+- !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "deselect"]
+- !private ["So11UIFocusItemP", "fatalError"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "isUserInteractionEnabled"]
+- !private ["So11UIFocusItemP", "run"]
+- !private ["So11UIFocusItemP", "select"]
+- !private ["So11UIFocusItemP", "selected"]
+- ["So11UIFocusItemP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "SKAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "color"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "deselect"]
+- !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isUserInteractionEnabled"]
+- !private ["So30UIPasteConfigurationSupportingP", "run"]
+- !private ["So30UIPasteConfigurationSupportingP", "select"]
+- !private ["So30UIPasteConfigurationSupportingP", "selected"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- ["So11UIResponderC", "Bool"]
+- ["So11UIResponderC", "ButtonDelegate"]
+- ["So11UIResponderC", "CGSize"]
+- ["So11UIResponderC", "NSCoder"]
+- !private ["So11UIResponderC", "SKAction"]
+- ["So11UIResponderC", "SKTexture"]
+- ["So11UIResponderC", "Set"]
+- ["So11UIResponderC", "UIEvent"]
+- ["So11UIResponderC", "UITouch"]
+- !private ["So11UIResponderC", "color"]
+- ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "deselect"]
+- !private ["So11UIResponderC", "fatalError"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "isSelected"]
+- !private ["So11UIResponderC", "isUserInteractionEnabled"]
+- !private ["So11UIResponderC", "run"]
+- ["So11UIResponderC", "select"]
+- ["So11UIResponderC", "selectButton"]
+- ["So11UIResponderC", "selected"]
+- ["So11UIResponderC", "touchesBegan"]
+- ["So11UIResponderC", "touchesEnded"]
+- !private ["So30UIResponderStandardEditActionsP", "SKAction"]
+- !private ["So30UIResponderStandardEditActionsP", "color"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "deselect"]
+- !private ["So30UIResponderStandardEditActionsP", "fatalError"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isUserInteractionEnabled"]
+- !private ["So30UIResponderStandardEditActionsP", "run"]
+- !private ["So30UIResponderStandardEditActionsP", "select"]
+- !private ["So30UIResponderStandardEditActionsP", "selected"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "cyan"]
+- !private ["s26_ExpressibleByColorLiteralP", "yellow"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SKAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "color"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cyan"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deselect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isUserInteractionEnabled"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "run"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scale"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "select"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "selected"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "yellow"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
+- "7Frogger14ButtonDelegateP"
+- "7Frogger10ButtonNodeC"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s26RangeReplaceableCollectionP"
+- !private "So8SKActionC"
+- "So6SKNodeC"
+- "So12SKSpriteNodeC"
+- "So10SKWarpableP"
+- !private "s8SequenceP"
+- !private "s12StaticStringV"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So7UIColorC"
+- "So18UIFocusEnvironmentP"
+- "So11UIFocusItemP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SceneKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SpriteKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/GameplayKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "b6f33f0a15869c9b901e02619bed89cb"

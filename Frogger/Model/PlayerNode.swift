@@ -18,6 +18,7 @@ class PlayerNode: ObjectNode {
     private var isAlive: Bool
     private var textureNode : SKSpriteNode
     private var jumpingFrames : [SKTexture]
+    private var isInvulnerable : Bool
     
     public var delegate : PlayerDelegate!
     
@@ -26,6 +27,7 @@ class PlayerNode: ObjectNode {
         
         self.lifes = 3
         self.isAlive = true
+        self.isInvulnerable = false
         
         let spriteAtlas = SKTextureAtlas(named: "frog-animation")
         var textures = [SKTexture]()
@@ -46,7 +48,7 @@ class PlayerNode: ObjectNode {
         self.name = "player"
         self.zPosition = 3
         self.color = .clear
-
+        
         self.setPhysics()
         
         self.addChild(self.textureNode)
@@ -57,11 +59,16 @@ class PlayerNode: ObjectNode {
     }
     
     public func removeLife(numberOfLifes: Int = 1) {
-        self.lifes -= numberOfLifes
-        self.blink(times: 2)
-        if self.lifes <= 0 {
-            self.die()
+        if !isInvulnerable {
             
+            self.lifes -= numberOfLifes
+            self.blink(times: 2)
+            
+            if self.lifes <= 0 {
+                self.die()
+            } else {
+                self.becomeInvulnerable(for: 1.8)
+            }
         }
     }
     
@@ -116,6 +123,17 @@ class PlayerNode: ObjectNode {
         }
     }
     
+    public func becomeInvulnerable(for time: Double) {
+        self.isInvulnerable = true
+        self.run(SKAction.wait(forDuration: time)) {
+            self.isInvulnerable = false
+        }
+    }
+    
+    public func getLifes() -> Int{
+        return lifes
+    }
+    
     private func setPhysics() {
         self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: size.width - 0.1, height: size.height - 0.1))
         self.physicsBody?.affectedByGravity = false
@@ -130,6 +148,7 @@ class PlayerNode: ObjectNode {
         self.isAlive = true
         self.jumpingFrames = [SKTexture]()
         self.textureNode = SKSpriteNode(texture: nil)
+        self.isInvulnerable = false
         super.init(coder: aDecoder)
     }
 }

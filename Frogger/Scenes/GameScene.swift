@@ -19,13 +19,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let CAM_WIDTH : CGFloat = 176.0
     
     var gameDelegate: GameDelegate!
+    var gameLevel = 1
     
-    var cam:SKCameraNode!
-    var camMaxPoint : CGFloat = 0.0
+    private var cam:SKCameraNode!
+    private var camMaxYPoint : CGFloat = 0.0
     
-    var mapManager : MapManager!
-    var player : PlayerNode!
-    var hudLayer : HudLayer!
+    private var hudLayer : HudLayer!
+    private var mapManager : MapManager!
+    
+    public var player : PlayerNode!
+    
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
@@ -35,7 +38,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         self.configureGestures()
 
-        self.mapManager = MapManager(mapName: "Frogger")
+        self.mapManager = MapManager()
         self.mapManager.delegate = self
         self.mapManager.loadMap()
         
@@ -58,13 +61,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // Called before each frame is rendered
         let playerY = self.player.position.y
 
-        if playerY > self.camMaxPoint {
-            self.hudLayer.setScore(0)
-            self.camMaxPoint = playerY
+        if playerY > self.camMaxYPoint {
+            self.hudLayer.setScore(1)
+            self.camMaxYPoint = playerY
         }
+        self.cam.position = CGPoint(x: self.CAM_WIDTH + 32, y: self.camMaxYPoint)
         
-        self.cam.position = CGPoint(x: CAM_WIDTH, y: camMaxPoint)
-        
+        if self.mapManager.yPosition - 100 < self.player.position.y {
+            self.gameLevel += 1
+            self.mapManager.loadMap(mapName: "Frogger34")
+        }
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
@@ -72,16 +78,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if contact.bodyA.node?.name == "player"  {
             if contact.bodyB.node?.name == "vehicle" {
                 self.player.removeLife()
-                self.hudLayer.setLifes(-1)
+                self.hudLayer.setLifes(self.player.getLifes())
             } else if contact.bodyB.node?.name == "coin" {
                 contact.bodyB.node?.removeFromParent()
+                self.hudLayer.setScore(500)
             }
         } else if contact.bodyA.node?.name == "coin" {
             contact.bodyA.node?.removeFromParent()
             self.hudLayer.setScore(500)
-        } else if contact.bodyA.node?.name == "veihcle" {
+        } else if contact.bodyA.node?.name == "vehicle" {
             self.player.removeLife()
-            self.hudLayer.setLifes(-1)
+            self.hudLayer.setLifes(self.player.getLifes())
         }
     }
     
@@ -121,14 +128,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.player.jump(to: .down)
     }
     
-    private func endGame() {
+    public func endGame() {
         self.gameDelegate.endGame(score: self.hudLayer.getScore())
     }
     
-    private func restart() {
-        
+    public func restart() {
+        self.gameDelegate.restart()
     }
-    
 }
 
 extension GameScene : PlayerDelegate {
@@ -140,28 +146,41 @@ extension GameScene : PlayerDelegate {
 extension GameScene : MapDelegate {
     
     func setSize(size: CGSize) {
-        self.size = size
+        self.size = CGSize(width: size.width - 64, height: size.height)
     }
     
     func nodeForMatrix(mapHeight: Int, mapWidth: Int, index: Int, objCode: Int, spriteSize: CGSize, position: CGPoint, layerName: String) {
         if objCode != 0 {
-            
             if layerName == "frog" {
-                player = PlayerNode(imageNamed: objCode.description, size: spriteSize, position: position)
-                player.delegate = self
-                self.scene?.addChild(player)
+                if self.player == nil {
+                    self.player = PlayerNode(imageNamed: objCode.description, size: spriteSize, position: position)
+                    self.player.delegate = self
+                    self.scene?.addChild(player)
+                }
             } else if layerName == "ground" {
-                let obj = Ground(imageNamed: objCode.description, size: spriteSize, position: position, level: 1)
+                let obj = Ground(imageNamed: objCode.description, size: spriteSize, position: position, level: self.gameLevel)
                 self.scene?.addChild(obj)
             } else if layerName == "right-spawn" {
-                let obj = Spawn(faceOrientation: .left, level: 1, imgNamed: objCode.description, size: spriteSize, position: position)
+                let obj = Spawn(faceOrientation: .right, level: self.gameLevel, imgNamed: objCode.description, size: spriteSize, position: position)
                 self.scene?.addChild(obj)
             } else if layerName == "left-spawn" {
-                let obj = Spawn(faceOrientation: .right, level: 1, imgNamed: objCode.description, size: spriteSize, position: position)
+                let obj = Spawn(faceOrientation: .left, level: self.gameLevel, imgNamed: objCode.description, size: spriteSize, position: position)
                 self.scene?.addChild(obj)
             } else if layerName == "obstacle" {
                 let obj = ObstacleNode(imageNamed: objCode.description, size: spriteSize, position: position)
                 obj.setOrientation(to: .up)
+                self.scene?.addChild(obj)
+            } else if layerName == "left-spawn-double-up" {
+                let obj = DoubleSpawn(faceOrientation: .left, level: self.gameLevel, imgNamed: objCode.description, size: spriteSize, position: position, laneDirection: .up)
+                self.scene?.addChild(obj)
+            }  else if layerName == "left-spawn-double-down" {
+                let obj = DoubleSpawn(faceOrientation: .left, level: self.gameLevel, imgNamed: objCode.description, size: spriteSize, position: position, laneDirection: .down)
+                self.scene?.addChild(obj)
+            }  else if layerName == "right-spawn-double-up" {
+                let obj = DoubleSpawn(faceOrientation: .right, level: self.gameLevel, imgNamed: objCode.description, size: spriteSize, position: position, laneDirection: .up)
+                self.scene?.addChild(obj)
+            }  else if layerName == "right-spawn-double-down" {
+                let obj = DoubleSpawn(faceOrientation: .right, level: self.gameLevel, imgNamed: objCode.description, size: spriteSize, position: position, laneDirection: .down)
                 self.scene?.addChild(obj)
             }
         }

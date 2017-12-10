@@ -9,26 +9,22 @@
 import SpriteKit
 
 class Spawn: ObjectNode {
-    
-    let MIN_VALUE = 3
-    
+
     var carNumber : Int
     var objPosition : ObjectFaceOrientation
+    var level : Int
     
     init(faceOrientation: ObjectFaceOrientation, level: Int, imgNamed: String, size: CGSize, position: CGPoint) {
         self.carNumber = Int(arc4random_uniform(3))
         self.objPosition = faceOrientation
-        
-        super.init(imageNamed: imgNamed, size: size, position: position)
-        //self.setOrientation(to: faceOrientation)
+        self.level = level
+        super.init(imageNamed: nil, size: size, position: position)
         self.spawnCars()
     }
     
     func spawnCars() {
         
-        let diceRoll : Double = Double(30 + Int(arc4random_uniform(10)) + Int(arc4random_uniform(15)) + Int(arc4random_uniform(20)))
-        
-        let action = SKAction.wait(forDuration: diceRoll/10)
+        let action = SKAction.wait(forDuration: self.getCarsInterval())
         var vehicle : Vehicle!
         
         switch self.carNumber {
@@ -50,7 +46,52 @@ class Spawn: ObjectNode {
         }
     }
     
+    public func getCarsInterval() -> Double {
+        let diceRoll : Double = Double(30 + Int(arc4random_uniform(10)) + Int(arc4random_uniform(15)) + Int(arc4random_uniform(20)))
+        
+        return  diceRoll/20 * Double(5/self.level)
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+class DoubleSpawn : Spawn {
+    
+    var laneDirection : ObjectFaceOrientation
+    
+    init(faceOrientation: ObjectFaceOrientation, level: Int, imgNamed: String, size: CGSize, position: CGPoint, laneDirection: ObjectFaceOrientation ) {
+        self.laneDirection = laneDirection
+        super.init(faceOrientation: faceOrientation, level: level, imgNamed: imgNamed, size: size, position: position)
+    }
+    
+    override func spawnCars() {
+
+        let action = SKAction.wait(forDuration: self.getCarsInterval())
+        var vehicle : Vehicle!
+        
+        switch self.carNumber {
+        case 0:
+            vehicle = Car(size: size, orientation: objPosition)
+        case 1:
+            vehicle = Bike(size: size, orientation: objPosition)
+        case 2:
+            vehicle = Bus(size: size, orientation: objPosition)
+        default:
+            vehicle = Car(size: size, orientation: objPosition)
+        }
+        
+        vehicle.startMoving(withDirection: laneDirection)
+        addChild(vehicle)
+        
+        run(action) {
+            self.spawnCars()
+        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }

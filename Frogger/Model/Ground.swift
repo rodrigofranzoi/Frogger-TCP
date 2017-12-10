@@ -20,7 +20,9 @@ class Ground: ObjectNode {
         super.init(imageNamed: image, size: size, position: position, orientation: orientation)
         
         if shouldSpawnCoins {
-            let diceRoll = Int(arc4random_uniform(15))
+            
+            let seed = UInt32(15 * (1 + level/10))
+            let diceRoll = Int(arc4random_uniform(seed))
             if diceRoll == 0 {
                 let coin = Coin(image: "coin", size: size)
                 self.addChild(coin)

@@ -19,11 +19,13 @@ class Coin: ObjectNode {
         self.zPosition = 2.5
         self.color = .red
         
-        self.physicsBody = SKPhysicsBody(rectangleOf: size)
+        self.physicsBody = SKPhysicsBody(texture: texture!, size: size)
         self.physicsBody?.affectedByGravity = false
         self.physicsBody?.isDynamic = false
         self.physicsBody?.categoryBitMask = ColliderType.Consumible
         self.physicsBody?.contactTestBitMask = ColliderType.Player
+        
+        self.setScale(0.5)
     }
     
     required init?(coder aDecoder: NSCoder) {

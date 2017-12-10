@@ -12,7 +12,12 @@ class ObstacleNode: ObjectNode {
     
     
     override init(imageNamed image: String?, size : CGSize, position: CGPoint, orientation: ObjectFaceOrientation = .left) {
-        super.init(imageNamed: image, size: size, position: position, orientation: orientation)
+        var imageName : String?
+
+        if image != "6" {
+            imageName = image
+        }
+        super.init(imageNamed: imageName, size: size, position: position, orientation: orientation)
         
         self.name = "obstacle"
         

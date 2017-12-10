@@ -25,6 +25,8 @@ depends-top-level:
 - "UIInterfaceOrientationMask"
 - "UIViewController"
 depends-member:
+- !private ["7Frogger14ButtonDelegateP", "init"]
+- !private ["7Frogger14ButtonDelegateP", "menuDelegate"]
 - !private ["So15CALayerDelegateP", "ignoresSiblingOrder"]
 - !private ["So15CALayerDelegateP", "presentScene"]
 - !private ["So15CALayerDelegateP", "showsFPS"]
@@ -495,6 +497,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 depends-nominal:
+- !private "7Frogger14ButtonDelegateP"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"

@@ -7,6 +7,9 @@ provides-member:
 - ["7Frogger6GroundC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "*"
+- !private "+"
+- !private "/"
 - !private "=="
 - "AssignmentPrecedence"
 - "Bool"
@@ -21,6 +24,7 @@ depends-top-level:
 - "ObjectNode"
 - "String"
 - !private "StringLiteralType"
+- !private "UInt32"
 - !private "arc4random_uniform"
 - !private "fatalError"
 depends-member:
@@ -29,6 +33,7 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "Coin"]
 - !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "UInt32"]
 - !private ["s7CVarArgP", "addChild"]
 - !private ["s7CVarArgP", "arc4random_uniform"]
 - !private ["s7CVarArgP", "fatalError"]
@@ -42,6 +47,7 @@ depends-member:
 - !private ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "Coin"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "UInt32"]
 - !private ["s28CustomDebugStringConvertibleP", "addChild"]
 - !private ["s28CustomDebugStringConvertibleP", "arc4random_uniform"]
 - !private ["s28CustomDebugStringConvertibleP", "fatalError"]
@@ -51,6 +57,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "Coin"]
 - !private ["s29CustomPlaygroundQuickLookableP", "Int"]
+- !private ["s29CustomPlaygroundQuickLookableP", "UInt32"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "addChild"]
 - !private ["s29CustomPlaygroundQuickLookableP", "arc4random_uniform"]
@@ -63,6 +70,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "Coin"]
 - !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "UInt32"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "addChild"]
 - !private ["s23CustomStringConvertibleP", "arc4random_uniform"]
@@ -77,6 +85,7 @@ depends-member:
 - !private ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "Coin"]
 - !private ["s9EquatableP", "Int"]
+- !private ["s9EquatableP", "UInt32"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "addChild"]
 - !private ["s9EquatableP", "arc4random_uniform"]
@@ -100,6 +109,7 @@ depends-member:
 - ["7Frogger6GroundC", "NSCoder"]
 - ["7Frogger6GroundC", "ObjectFaceOrientation"]
 - ["7Frogger6GroundC", "String"]
+- !private ["7Frogger6GroundC", "UInt32"]
 - !private ["7Frogger6GroundC", "addChild"]
 - !private ["7Frogger6GroundC", "arc4random_uniform"]
 - ["7Frogger6GroundC", "deinit"]
@@ -109,6 +119,7 @@ depends-member:
 - ["7Frogger6GroundC", "shouldSpawnCoins"]
 - !private ["s8HashableP", "Coin"]
 - !private ["s8HashableP", "Int"]
+- !private ["s8HashableP", "UInt32"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "addChild"]
 - !private ["s8HashableP", "arc4random_uniform"]
@@ -124,6 +135,7 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "Coin"]
 - !private ["So8NSCodingP", "Int"]
+- !private ["So8NSCodingP", "UInt32"]
 - !private ["So8NSCodingP", "addChild"]
 - !private ["So8NSCodingP", "arc4random_uniform"]
 - !private ["So8NSCodingP", "fatalError"]
@@ -133,6 +145,7 @@ depends-member:
 - ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "Coin"]
 - !private ["So9NSCopyingP", "Int"]
+- !private ["So9NSCopyingP", "UInt32"]
 - !private ["So9NSCopyingP", "addChild"]
 - !private ["So9NSCopyingP", "arc4random_uniform"]
 - !private ["So9NSCopyingP", "fatalError"]
@@ -151,6 +164,7 @@ depends-member:
 - ["So8NSObjectC", "NSCoder"]
 - ["So8NSObjectC", "ObjectFaceOrientation"]
 - ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UInt32"]
 - !private ["So8NSObjectC", "addChild"]
 - !private ["So8NSObjectC", "arc4random_uniform"]
 - !private ["So8NSObjectC", "fatalError"]
@@ -158,6 +172,7 @@ depends-member:
 - ["So8NSObjectC", "shouldSpawnCoins"]
 - !private ["So16NSObjectProtocolP", "Coin"]
 - !private ["So16NSObjectProtocolP", "Int"]
+- !private ["So16NSObjectProtocolP", "UInt32"]
 - !private ["So16NSObjectProtocolP", "addChild"]
 - !private ["So16NSObjectProtocolP", "arc4random_uniform"]
 - !private ["So16NSObjectProtocolP", "fatalError"]
@@ -177,6 +192,7 @@ depends-member:
 - ["7Frogger10ObjectNodeC", "NSCoder"]
 - ["7Frogger10ObjectNodeC", "ObjectFaceOrientation"]
 - ["7Frogger10ObjectNodeC", "String"]
+- !private ["7Frogger10ObjectNodeC", "UInt32"]
 - !private ["7Frogger10ObjectNodeC", "addChild"]
 - !private ["7Frogger10ObjectNodeC", "arc4random_uniform"]
 - !private ["7Frogger10ObjectNodeC", "fatalError"]
@@ -194,6 +210,7 @@ depends-member:
 - ["So6SKNodeC", "NSCoder"]
 - ["So6SKNodeC", "ObjectFaceOrientation"]
 - ["So6SKNodeC", "String"]
+- !private ["So6SKNodeC", "UInt32"]
 - !private ["So6SKNodeC", "addChild"]
 - !private ["So6SKNodeC", "arc4random_uniform"]
 - !private ["So6SKNodeC", "fatalError"]
@@ -207,6 +224,7 @@ depends-member:
 - ["So12SKSpriteNodeC", "NSCoder"]
 - ["So12SKSpriteNodeC", "ObjectFaceOrientation"]
 - ["So12SKSpriteNodeC", "String"]
+- !private ["So12SKSpriteNodeC", "UInt32"]
 - !private ["So12SKSpriteNodeC", "addChild"]
 - !private ["So12SKSpriteNodeC", "arc4random_uniform"]
 - !private ["So12SKSpriteNodeC", "fatalError"]
@@ -214,6 +232,7 @@ depends-member:
 - ["So12SKSpriteNodeC", "shouldSpawnCoins"]
 - !private ["So10SKWarpableP", "Coin"]
 - !private ["So10SKWarpableP", "Int"]
+- !private ["So10SKWarpableP", "UInt32"]
 - !private ["So10SKWarpableP", "addChild"]
 - !private ["So10SKWarpableP", "arc4random_uniform"]
 - !private ["So10SKWarpableP", "fatalError"]
@@ -232,6 +251,7 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So18UIFocusEnvironmentP", "Coin"]
 - !private ["So18UIFocusEnvironmentP", "Int"]
+- !private ["So18UIFocusEnvironmentP", "UInt32"]
 - !private ["So18UIFocusEnvironmentP", "addChild"]
 - !private ["So18UIFocusEnvironmentP", "arc4random_uniform"]
 - !private ["So18UIFocusEnvironmentP", "fatalError"]
@@ -241,6 +261,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So11UIFocusItemP", "Coin"]
 - !private ["So11UIFocusItemP", "Int"]
+- !private ["So11UIFocusItemP", "UInt32"]
 - !private ["So11UIFocusItemP", "addChild"]
 - !private ["So11UIFocusItemP", "arc4random_uniform"]
 - !private ["So11UIFocusItemP", "fatalError"]
@@ -250,6 +271,7 @@ depends-member:
 - ["So11UIFocusItemP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "Coin"]
 - !private ["So30UIPasteConfigurationSupportingP", "Int"]
+- !private ["So30UIPasteConfigurationSupportingP", "UInt32"]
 - !private ["So30UIPasteConfigurationSupportingP", "addChild"]
 - !private ["So30UIPasteConfigurationSupportingP", "arc4random_uniform"]
 - !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
@@ -265,6 +287,7 @@ depends-member:
 - ["So11UIResponderC", "NSCoder"]
 - ["So11UIResponderC", "ObjectFaceOrientation"]
 - ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "UInt32"]
 - !private ["So11UIResponderC", "addChild"]
 - !private ["So11UIResponderC", "arc4random_uniform"]
 - !private ["So11UIResponderC", "fatalError"]
@@ -272,6 +295,7 @@ depends-member:
 - ["So11UIResponderC", "shouldSpawnCoins"]
 - !private ["So30UIResponderStandardEditActionsP", "Coin"]
 - !private ["So30UIResponderStandardEditActionsP", "Int"]
+- !private ["So30UIResponderStandardEditActionsP", "UInt32"]
 - !private ["So30UIResponderStandardEditActionsP", "addChild"]
 - !private ["So30UIResponderStandardEditActionsP", "arc4random_uniform"]
 - !private ["So30UIResponderStandardEditActionsP", "fatalError"]
@@ -279,6 +303,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "level"]
 - !private ["So30UIResponderStandardEditActionsP", "shouldSpawnCoins"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["s6UInt32V", "init"]
+- !private ["s15UnsignedIntegerP", "init"]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -293,6 +319,7 @@ depends-member:
 - !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Coin"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UInt32"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addChild"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "arc4random_uniform"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
@@ -362,6 +389,8 @@ depends-nominal:
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "s6UInt32V"
+- !private "s15UnsignedIntegerP"
 - !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
