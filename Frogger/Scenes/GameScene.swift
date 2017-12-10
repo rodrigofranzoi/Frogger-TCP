@@ -129,6 +129,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     public func endGame() {
+        ScoresManager.addScore(self.hudLayer.getScore())
         self.gameDelegate.endGame(score: self.hudLayer.getScore())
     }
     

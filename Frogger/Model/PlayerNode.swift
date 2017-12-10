@@ -107,8 +107,10 @@ class PlayerNode: ObjectNode {
     }
     
     private func die() {
-        self.isAlive = false
-        self.delegate.playerDidDie()
+        if isAlive {
+            self.isAlive = false
+            self.delegate.playerDidDie()
+        }
     }
     
     private func blink(times: Int) {

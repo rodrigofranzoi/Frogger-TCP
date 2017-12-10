@@ -15,6 +15,7 @@
 		2A18D18D1FDCD2300008350A /* FroggerMapInfinite.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A18D18C1FDCD2300008350A /* FroggerMapInfinite.json */; };
 		2A18D18F1FDCD4EA0008350A /* FroggerInit.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A18D18E1FDCD4E90008350A /* FroggerInit.json */; };
 		2A18D1911FDCE6430008350A /* Frogger34.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A18D1901FDCE6430008350A /* Frogger34.json */; };
+		2A18D1991FDD8BFC0008350A /* ScoresManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A18D1981FDD8BFC0008350A /* ScoresManager.swift */; };
 		2A3C55731FD4B62D00AC4CE6 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C55721FD4B62D00AC4CE6 /* Vehicle.swift */; };
 		2A3C557D1FD4CDD900AC4CE6 /* Frogger.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A3C557C1FD4CDD900AC4CE6 /* Frogger.json */; };
 		2A6BA89E1F97DBB1004B8A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6BA89D1F97DBB1004B8A9B /* AppDelegate.swift */; };
@@ -31,7 +32,6 @@
 		2A6BA8CB1F9991E7004B8A9B /* froggermap4.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A6BA8CA1F9991E3004B8A9B /* froggermap4.json */; };
 		2AA0D4091FD4A2D600E659C2 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA0D4081FD4A2D600E659C2 /* MapManager.swift */; };
 		2AC317301FD4AFEA008BFFF5 /* Spawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3172F1FD4AFEA008BFFF5 /* Spawn.swift */; };
-		5ADAA6BC1FDC82980005F426 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADAA6BB1FDC82980005F426 /* Record.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +43,7 @@
 		2A18D18C1FDCD2300008350A /* FroggerMapInfinite.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FroggerMapInfinite.json; sourceTree = "<group>"; };
 		2A18D18E1FDCD4E90008350A /* FroggerInit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FroggerInit.json; sourceTree = "<group>"; };
 		2A18D1901FDCE6430008350A /* Frogger34.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Frogger34.json; sourceTree = "<group>"; };
+		2A18D1981FDD8BFC0008350A /* ScoresManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresManager.swift; sourceTree = "<group>"; };
 		2A3C55721FD4B62D00AC4CE6 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		2A3C557C1FD4CDD900AC4CE6 /* Frogger.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Frogger.json; sourceTree = "<group>"; };
 		2A6BA89A1F97DBB1004B8A9B /* Frogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +62,6 @@
 		2A6BA8CA1F9991E3004B8A9B /* froggermap4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = froggermap4.json; sourceTree = "<group>"; };
 		2AA0D4081FD4A2D600E659C2 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		2AC3172F1FD4AFEA008BFFF5 /* Spawn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spawn.swift; sourceTree = "<group>"; };
-		5ADAA6BB1FDC82980005F426 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,11 +139,11 @@
 				2AA0D4081FD4A2D600E659C2 /* MapManager.swift */,
 				2AC3172F1FD4AFEA008BFFF5 /* Spawn.swift */,
 				2A3C55721FD4B62D00AC4CE6 /* Vehicle.swift */,
-				5ADAA6BB1FDC82980005F426 /* Record.swift */,
 				2A18D1811FDC50730008350A /* Coin.swift */,
 				2A18D1841FDC51610008350A /* Ground.swift */,
 				2A18D1861FDC5F1A0008350A /* HudLayer.swift */,
 				2A18D18A1FDC72DE0008350A /* ButtonNode.swift */,
+				2A18D1981FDD8BFC0008350A /* ScoresManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,13 +240,13 @@
 				2A18D1891FDC71CB0008350A /* MenuScene.swift in Sources */,
 				2A6BA8C51F994551004B8A9B /* ObjectOrientation.swift in Sources */,
 				2AC317301FD4AFEA008BFFF5 /* Spawn.swift in Sources */,
-				5ADAA6BC1FDC82980005F426 /* Record.swift in Sources */,
 				2A6BA8A61F97DBB1004B8A9B /* GameViewController.swift in Sources */,
 				2AA0D4091FD4A2D600E659C2 /* MapManager.swift in Sources */,
 				2A18D1851FDC51610008350A /* Ground.swift in Sources */,
 				2A6BA8C11F9944C1004B8A9B /* PlayerNode.swift in Sources */,
 				2A6BA89E1F97DBB1004B8A9B /* AppDelegate.swift in Sources */,
 				2A3C55731FD4B62D00AC4CE6 /* Vehicle.swift in Sources */,
+				2A18D1991FDD8BFC0008350A /* ScoresManager.swift in Sources */,
 				2A18D1821FDC50730008350A /* Coin.swift in Sources */,
 				2A6BA8C31F99451D004B8A9B /* ObjectNode.swift in Sources */,
 				2A18D18B1FDC72DE0008350A /* ButtonNode.swift in Sources */,
