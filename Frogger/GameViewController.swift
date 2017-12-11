@@ -67,14 +67,12 @@ extension GameViewController : GameDelegate {
     func endGame(score: Int) {
         if let view = self.view as! SKView? {
             self.loadMenu(view, score: score)
-            self.debug(view)
         }
     }
     
     func restart() {
         if let view = self.view as! SKView? {
             self.loadGame(view)
-            self.debug(view)
         }
     }
     

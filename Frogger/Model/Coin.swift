@@ -10,8 +10,10 @@ import SpriteKit
 
 class Coin: ObjectNode {
     
-    init(image: String, size: CGSize) {
-        
+    private var score : Int
+    
+    init(image: String, size: CGSize, score: Int = 500) {
+        self.score = score
         super.init(imageNamed: image, size: size, position: CGPoint(x: 0.0, y: 0.0))
         
         self.name = "coin"
@@ -26,6 +28,10 @@ class Coin: ObjectNode {
         self.physicsBody?.contactTestBitMask = ColliderType.Player
         
         self.setScale(0.5)
+    }
+    
+    func getScore() -> Int {
+        return score
     }
     
     required init?(coder aDecoder: NSCoder) {

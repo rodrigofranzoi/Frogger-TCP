@@ -28,6 +28,8 @@ depends-top-level:
 - "CGFloat"
 - "CGPoint"
 - "CGSize"
+- "CastingPrecedence"
+- !private "Coin"
 - !private "DoubleSpawn"
 - "GameDelegate"
 - "GameScene"
@@ -129,6 +131,8 @@ depends-member:
 - !private ["s7CVarArgP", "swipedUp"]
 - !private ["s7CVarArgP", "view"]
 - ["s7CVarArgP", ""]
+- !private ["7Frogger4CoinC", "getScore"]
+- !private ["7Frogger4CoinC", "removeFromParent"]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "description"]
 - !private ["s10ComparableP", "init"]
@@ -209,6 +213,7 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "jump"]
 - !private ["s29CustomPlaygroundQuickLookableP", "position"]
+- !private ["s29CustomPlaygroundQuickLookableP", "removeFromParent"]
 - !private ["s29CustomPlaygroundQuickLookableP", "removeLife"]
 - !private ["s29CustomPlaygroundQuickLookableP", "setLifes"]
 - !private ["s29CustomPlaygroundQuickLookableP", "setOrientation"]
@@ -447,6 +452,7 @@ depends-member:
 - ["7Frogger9GameSceneC", "CGFloat"]
 - ["7Frogger9GameSceneC", "CGPoint"]
 - ["7Frogger9GameSceneC", "CGSize"]
+- !private ["7Frogger9GameSceneC", "Coin"]
 - !private ["7Frogger9GameSceneC", "DoubleSpawn"]
 - ["7Frogger9GameSceneC", "GameDelegate"]
 - !private ["7Frogger9GameSceneC", "Ground"]
@@ -756,6 +762,7 @@ depends-member:
 - ["So8NSObjectC", "CGFloat"]
 - ["So8NSObjectC", "CGPoint"]
 - ["So8NSObjectC", "CGSize"]
+- !private ["So8NSObjectC", "Coin"]
 - !private ["So8NSObjectC", "DoubleSpawn"]
 - ["So8NSObjectC", "GameDelegate"]
 - !private ["So8NSObjectC", "Ground"]
@@ -898,9 +905,11 @@ depends-member:
 - !private ["7Frogger21ObjectFaceOrientationO", "up"]
 - !private ["7Frogger10ObjectNodeC", "delegate"]
 - !private ["7Frogger10ObjectNodeC", "getLifes"]
+- !private ["7Frogger10ObjectNodeC", "getScore"]
 - !private ["7Frogger10ObjectNodeC", "init"]
 - !private ["7Frogger10ObjectNodeC", "jump"]
 - !private ["7Frogger10ObjectNodeC", "position"]
+- !private ["7Frogger10ObjectNodeC", "removeFromParent"]
 - !private ["7Frogger10ObjectNodeC", "removeLife"]
 - !private ["7Frogger10ObjectNodeC", "setOrientation"]
 - !private ["7Frogger12ObstacleNodeC", "init"]
@@ -973,6 +982,7 @@ depends-member:
 - ["So12SKEffectNodeC", "CGFloat"]
 - ["So12SKEffectNodeC", "CGPoint"]
 - ["So12SKEffectNodeC", "CGSize"]
+- !private ["So12SKEffectNodeC", "Coin"]
 - !private ["So12SKEffectNodeC", "DoubleSpawn"]
 - ["So12SKEffectNodeC", "GameDelegate"]
 - !private ["So12SKEffectNodeC", "Ground"]
@@ -1027,6 +1037,7 @@ depends-member:
 - ["So6SKNodeC", "CGFloat"]
 - ["So6SKNodeC", "CGPoint"]
 - ["So6SKNodeC", "CGSize"]
+- !private ["So6SKNodeC", "Coin"]
 - !private ["So6SKNodeC", "DoubleSpawn"]
 - ["So6SKNodeC", "GameDelegate"]
 - !private ["So6SKNodeC", "Ground"]
@@ -1140,6 +1151,7 @@ depends-member:
 - ["So7SKSceneC", "CGFloat"]
 - ["So7SKSceneC", "CGPoint"]
 - ["So7SKSceneC", "CGSize"]
+- !private ["So7SKSceneC", "Coin"]
 - !private ["So7SKSceneC", "DoubleSpawn"]
 - ["So7SKSceneC", "GameDelegate"]
 - !private ["So7SKSceneC", "Ground"]
@@ -1197,6 +1209,7 @@ depends-member:
 - !private ["So12SKSpriteNodeC", "getScore"]
 - !private ["So12SKSpriteNodeC", "jump"]
 - !private ["So12SKSpriteNodeC", "position"]
+- !private ["So12SKSpriteNodeC", "removeFromParent"]
 - !private ["So12SKSpriteNodeC", "removeLife"]
 - !private ["So12SKSpriteNodeC", "setLifes"]
 - !private ["So12SKSpriteNodeC", "setOrientation"]
@@ -1244,6 +1257,7 @@ depends-member:
 - !private ["So10SKWarpableP", "playerDelimiter"]
 - ["So10SKWarpableP", "playerDidDie"]
 - !private ["So10SKWarpableP", "position"]
+- !private ["So10SKWarpableP", "removeFromParent"]
 - !private ["So10SKWarpableP", "removeLife"]
 - !private ["So10SKWarpableP", "scaleMode"]
 - !private ["So10SKWarpableP", "scene"]
@@ -1467,6 +1481,7 @@ depends-member:
 - ["So11UIResponderC", "CGFloat"]
 - ["So11UIResponderC", "CGPoint"]
 - ["So11UIResponderC", "CGSize"]
+- !private ["So11UIResponderC", "Coin"]
 - !private ["So11UIResponderC", "DoubleSpawn"]
 - ["So11UIResponderC", "GameDelegate"]
 - !private ["So11UIResponderC", "Ground"]
@@ -1698,6 +1713,7 @@ depends-nominal:
 - !private "SC6CGRectV"
 - !private "SC6CGSizeV"
 - "s7CVarArgP"
+- !private "7Frogger4CoinC"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"

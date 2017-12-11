@@ -22,10 +22,10 @@ class PlayerNode: ObjectNode {
     
     public var delegate : PlayerDelegate!
     
-    init(imageNamed image: String, size : CGSize, position: CGPoint) {
+    init(imageNamed image: String, size : CGSize, position: CGPoint, lifes: Int = 3) {
         //Player custom atributes
         
-        self.lifes = 3
+        self.lifes = lifes
         self.isAlive = true
         self.isInvulnerable = false
         
@@ -90,10 +90,13 @@ class PlayerNode: ObjectNode {
         }
         
         self.setOrientation(to: orientation)
-        
+        self.animateJump()
+    }
+    
+    private func animateJump() {
         let animation = SKAction.animate(with: self.jumpingFrames, timePerFrame: 0.2/7, resize: false, restore: false)
         self.textureNode.run(animation)
-
+        
         
         let zoomInAction = SKAction.scale(to: 1.2, duration: 0.1)
         self.textureNode.run(zoomInAction, completion: {

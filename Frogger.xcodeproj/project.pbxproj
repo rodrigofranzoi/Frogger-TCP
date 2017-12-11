@@ -140,17 +140,17 @@
 		2A6BA8BC1F993B4B004B8A9B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2A18D1861FDC5F1A0008350A /* HudLayer.swift */,
 				2A6BA8C41F994551004B8A9B /* ObjectOrientation.swift */,
-				2A6BA8C01F9944C1004B8A9B /* PlayerNode.swift */,
 				2A6BA8C21F99451D004B8A9B /* ObjectNode.swift */,
 				2A6BA8C61F99750B004B8A9B /* ObstacleNode.swift */,
-				2AA0D4081FD4A2D600E659C2 /* MapManager.swift */,
+				2A18D1841FDC51610008350A /* Ground.swift */,
+				2A6BA8C01F9944C1004B8A9B /* PlayerNode.swift */,
 				2AC3172F1FD4AFEA008BFFF5 /* Spawn.swift */,
 				2A3C55721FD4B62D00AC4CE6 /* Vehicle.swift */,
 				2A18D1811FDC50730008350A /* Coin.swift */,
-				2A18D1841FDC51610008350A /* Ground.swift */,
-				2A18D1861FDC5F1A0008350A /* HudLayer.swift */,
 				2A18D18A1FDC72DE0008350A /* ButtonNode.swift */,
+				2AA0D4081FD4A2D600E659C2 /* MapManager.swift */,
 				2A18D1981FDD8BFC0008350A /* ScoresManager.swift */,
 			);
 			path = Model;

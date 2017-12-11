@@ -83,12 +83,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 self.player.removeLife()
                 self.hudLayer.setLifes(self.player.getLifes())
             } else if contact.bodyB.node?.name == "coin" {
-                contact.bodyB.node?.removeFromParent()
-                self.hudLayer.setScore(500)
+                if let coin = contact.bodyB.node as? Coin {
+                    coin.removeFromParent()
+                    self.hudLayer.setScore(coin.getScore())
+                }
             }
         } else if contact.bodyA.node?.name == "coin" {
-            contact.bodyA.node?.removeFromParent()
-            self.hudLayer.setScore(500)
+            if let coin = contact.bodyA.node as? Coin {
+                coin.removeFromParent()
+                self.hudLayer.setScore(coin.getScore())
+            }
         } else if contact.bodyA.node?.name == "vehicle" {
             self.player.removeLife()
             self.hudLayer.setLifes(self.player.getLifes())
