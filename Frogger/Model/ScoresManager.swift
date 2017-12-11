@@ -16,7 +16,7 @@ class ScoresManager  {
         newScore["number"] = score.description
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
         newScore["date"] = dateFormatter.string(from: NSDate() as Date)
         
         
@@ -37,15 +37,25 @@ class ScoresManager  {
     }
     
     class func getScores(rankQnt numb: Int) -> String {
+        
         let scores : [[String:String]] = self.getScores(rankQnt: numb)
-        var str : String = "#N  DATE\t\t\t\t\t\tSCORE\n\n"
+        var str : String = "#N   DATE\t\t\t\tSCORE\n\n"
+        let fakeRows =  numb - scores.count
         
         for (index, score) in scores.enumerated() {
             let scoreNumber : String = score["number"]!
             let scoreDate :String  = score["date"]!
-            let number = "#" + (index+1).description + " "
-            str +=  number + " " + scoreDate + "\t\t" + scoreNumber + "\n"
+            let number = "#" + String(format: "%02d", index+1) + " "
+            str +=  number + " " + scoreDate + "\t" + scoreNumber + "\n"
         }
+        
+        if fakeRows > 0 {
+            for index in scores.count...numb-1 {
+                let number = "#" + String(format: "%02d", index+1) + " "
+                str +=  number + " NULL\t\t\t\t" + "NULL" + "\n"
+            }
+        }
+        
         return str
     }
     

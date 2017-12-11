@@ -16,7 +16,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         if let view = self.view as! SKView? {
-            self.loadMenu(view)
+            self.loadMenu(view, score: nil)
             self.debug(view)
         }
     }
@@ -34,10 +34,13 @@ class GameViewController: UIViewController {
         view.showsNodeCount = true
     }
     
-    private func loadMenu(_ view: SKView) {
+    private func loadMenu(_ view: SKView, score: Int?) {
         let menu = MenuScene()
         menu.menuDelegate = self
         view.presentScene(menu)
+        if let score = score {
+            menu.setLastScoreLabel(score: score)
+        }
     }
 
     override var shouldAutorotate: Bool {
@@ -65,7 +68,7 @@ extension GameViewController : MenuDelegate {
 extension GameViewController : GameDelegate {
     func endGame(score: Int) {
         if let view = self.view as! SKView? {
-            self.loadMenu(view)
+            self.loadMenu(view, score: score)
             self.debug(view)
         }
     }

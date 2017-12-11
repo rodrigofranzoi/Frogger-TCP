@@ -27,8 +27,8 @@ class MapManager {
     var spritesForLvl : [[SKSpriteNode]] = []
     
     private func removeLastLevel() {
-        if atualLvl != 0 {
-            let sprites = self.spritesForLvl[atualLvl - 1]
+        if atualLvl > 1 {
+            let sprites = self.spritesForLvl[atualLvl - 2]
             for sprite in sprites {
                 sprite.removeAllActions()
                 sprite.removeAllChildren()

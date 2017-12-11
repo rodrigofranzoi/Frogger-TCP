@@ -24,7 +24,7 @@ class ButtonNode: SKSpriteNode {
         self.delegate = scene
         super.init(texture: texture, color: .cyan, size: size)
         self.isUserInteractionEnabled = true
-        
+        self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
     }
     
     func selectButton() {
@@ -41,7 +41,7 @@ class ButtonNode: SKSpriteNode {
         self.color = .yellow
         self.delegate.setSelectedButton(buttonNode: self)
         
-        let action = SKAction.scale(to: 0.95, duration: 0.1)
+        let action = SKAction.scale(to: 0.90, duration: 0.1)
         run(action)
         
     }

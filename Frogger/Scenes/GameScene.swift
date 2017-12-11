@@ -72,7 +72,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if self.mapManager.yPosition - 128 < self.player.position.y {
             self.gameLevel += 1
-            self.mapManager.loadMap(mapName: "Frogger34")
+            self.mapManager.loadMap(mapName: "Frogger-1")
         }
     }
     
