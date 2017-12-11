@@ -71,6 +71,21 @@ class ScoresManager  {
         }
     }
     
+    class func getScores(ArraySize numb: Int) -> [String]{
+        
+        let str : String = ScoresManager.getScores(rankQnt: 5)
+        var scoreLines = [] as [String]
+        
+        //break string with /n as param
+        
+        str.enumerateLines { (score, _) in
+            scoreLines.append(score)
+        }
+        
+        return scoreLines
+        
+    }
+    
     private class func saveScores(scores : [[String:String]]) {
         
         let file = "scores" + ".json"
