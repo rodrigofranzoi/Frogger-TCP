@@ -30,8 +30,12 @@ class MenuScene: SKScene, ButtonDelegate {
         scoreBox.position = CGPoint(x: self.size.width/4, y: 0)
         self.addChild(scoreBox)
         
+        let froggerLogo = SKSpriteNode(texture: SKTexture(imageNamed:"froggerLogo"), color: .clear, size: CGSize(width: 200, height: 200))
+        froggerLogo.position = CGPoint(x: -self.size.width/4, y: self.size.height/4)
+        self.addChild(froggerLogo)
+        
         playButton = ButtonNode(texture: SKTexture(imageNamed:"playSprite"), size: CGSize(width: 120, height: 60), scene: self)
-        playButton.position = CGPoint(x: -self.size.width/4, y: 0)
+        playButton.position = CGPoint(x: -self.size.width/4, y: -self.size.height/4)
         self.addChild(playButton)
         
         setScoresLabels()
