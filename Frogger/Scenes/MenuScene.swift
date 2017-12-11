@@ -44,22 +44,14 @@ class MenuScene: SKScene, ButtonDelegate {
     }
     func setScoresLabels(){
        
-        let scoreLines = ScoresManager.getScores(ArraySize: 5)
+    
+        let scoreLines = SKLabelNode(fontNamed: "Early-GameBoy")
+        scoreLines.position = CGPoint(x: 0, y: scoreBox.size.height/4)
+        scoreLines.text = ScoresManager.getScores(rankQnt: 5)
+        scoreLines.fontSize = 10
+        scoreLines.numberOfLines = 10
+        scoreBox.addChild(scoreLines)
         
-        var spaceBetweenScores = 15
-        
-        //for ever score, creates a label in the scoresBox
-        for score in scoreLines{
-            
-            let newScoreLine = SKLabelNode(fontNamed: "Early-GameBoy")
-            newScoreLine.position = CGPoint(x: 0, y: scoreBox.size.height/2 - CGFloat(spaceBetweenScores))
-            newScoreLine.text = score
-            newScoreLine.fontSize = 10
-            spaceBetweenScores += 15
-            scoreBox.addChild(newScoreLine)
-            
-        }
-
         
     }
     func setSelectedButton(buttonNode: ButtonNode) {
