@@ -16,6 +16,8 @@ class MenuScene: SKScene, ButtonDelegate {
     
     var menuDelegate : MenuDelegate!
     var playButton : ButtonNode!
+    var scoreBox : SKSpriteNode!
+    
     
     
     override func didMove(to view: SKView) {
@@ -24,17 +26,33 @@ class MenuScene: SKScene, ButtonDelegate {
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         
         
-        playButton = ButtonNode(texture: SKTexture(imageNamed:"playSprite"), size: CGSize(width: 100, height: 40), scene: self)
+        scoreBox = SKSpriteNode(texture: nil, color: .blue, size: CGSize(width: self.size.width/2 - 40, height:  self.size.height - 40))
+        scoreBox.position = CGPoint(x: self.size.width/4, y: 0)
+        self.addChild(scoreBox)
+        
+        let froggerLogo = SKSpriteNode(texture: SKTexture(imageNamed:"froggerLogo"), color: .clear, size: CGSize(width: 200, height: 200))
+        froggerLogo.position = CGPoint(x: -self.size.width/4, y: self.size.height/4)
+        self.addChild(froggerLogo)
+        
+        playButton = ButtonNode(texture: SKTexture(imageNamed:"playSprite"), size: CGSize(width: 120, height: 60), scene: self)
+        playButton.position = CGPoint(x: -self.size.width/4, y: -self.size.height/4)
         self.addChild(playButton)
         
-        setRecordsLabels()
+        setScoresLabels()
         
 
     }
-    func setRecordsLabels(){
-        let str : String = ScoresManager.getScores(rankQnt: 5)
-        print(str)
-            
+    func setScoresLabels(){
+       
+    
+        let scoreLines = SKLabelNode(fontNamed: "Early-GameBoy")
+        scoreLines.position = CGPoint(x: 0, y: scoreBox.size.height/4)
+        scoreLines.text = ScoresManager.getScores(rankQnt: 5)
+        scoreLines.fontSize = 10
+        scoreLines.numberOfLines = 10
+        scoreBox.addChild(scoreLines)
+        
+        
     }
     func setSelectedButton(buttonNode: ButtonNode) {
         

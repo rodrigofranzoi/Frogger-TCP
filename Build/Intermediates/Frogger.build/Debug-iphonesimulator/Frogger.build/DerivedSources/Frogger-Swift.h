@@ -253,6 +253,18 @@ SWIFT_CLASS("_TtC7Frogger4Coin")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC7Frogger5Spawn")
+@interface Spawn : ObjectNode
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7Frogger11DoubleSpawn")
+@interface DoubleSpawn : Spawn
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class SKView;
 @class SKPhysicsContact;
 @class UISwipeGestureRecognizer;
@@ -326,11 +338,6 @@ SWIFT_CLASS("_TtC7Frogger10PlayerNode")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC7Frogger5Spawn")
-@interface Spawn : ObjectNode
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 SWIFT_MODULE_NAMESPACE_POP

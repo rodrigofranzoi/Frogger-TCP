@@ -36,7 +36,6 @@ depends-top-level:
 - "String"
 - "StringLiteralType"
 - !private "URL"
-- !private "print"
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "enumerated"]
@@ -201,7 +200,6 @@ depends-member:
 - ["7Frogger10MapManagerC", "lastIndex"]
 - !private ["7Frogger10MapManagerC", "loadGame"]
 - ["7Frogger10MapManagerC", "loadMap"]
-- !private ["7Frogger10MapManagerC", "print"]
 - !private ["7Frogger10MapManagerC", "removeLastLevel"]
 - ["7Frogger10MapManagerC", "spritesForLvl"]
 - ["7Frogger10MapManagerC", "xPosition"]

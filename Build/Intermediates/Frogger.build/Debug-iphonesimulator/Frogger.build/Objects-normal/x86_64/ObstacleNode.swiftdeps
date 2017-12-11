@@ -7,6 +7,7 @@ provides-member:
 - ["7Frogger12ObstacleNodeC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!="
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "CGPoint"
@@ -19,9 +20,11 @@ depends-top-level:
 - !private "SKPhysicsBody"
 - "String"
 - !private "StringLiteralType"
+- !private "UnicodeScalarType"
 - !private "fatalError"
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "ColliderType"]
 - !private ["s7CVarArgP", "SKPhysicsBody"]
 - !private ["s7CVarArgP", "affectedByGravity"]
@@ -49,15 +52,18 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "ColliderType"]
 - !private ["s29CustomPlaygroundQuickLookableP", "SKPhysicsBody"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "fatalError"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "name"]
 - !private ["s29CustomPlaygroundQuickLookableP", "physicsBody"]
 - !private ["s29CustomPlaygroundQuickLookableP", "zPosition"]
 - ["s29CustomPlaygroundQuickLookableP", ""]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "ColliderType"]
 - !private ["s23CustomStringConvertibleP", "SKPhysicsBody"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "affectedByGravity"]
 - !private ["s23CustomStringConvertibleP", "categoryBitMask"]
 - !private ["s23CustomStringConvertibleP", "fatalError"]
@@ -67,10 +73,13 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "physicsBody"]
 - !private ["s23CustomStringConvertibleP", "zPosition"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "ColliderType"]
 - !private ["s9EquatableP", "SKPhysicsBody"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "affectedByGravity"]
 - !private ["s9EquatableP", "categoryBitMask"]
 - !private ["s9EquatableP", "fatalError"]
@@ -81,11 +90,13 @@ depends-member:
 - !private ["s9EquatableP", "physicsBody"]
 - !private ["s9EquatableP", "zPosition"]
 - ["s9EquatableP", ""]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s8HashableP", "ColliderType"]
 - !private ["s8HashableP", "SKPhysicsBody"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "affectedByGravity"]
 - !private ["s8HashableP", "categoryBitMask"]
 - !private ["s8HashableP", "fatalError"]
@@ -96,6 +107,7 @@ depends-member:
 - !private ["s8HashableP", "physicsBody"]
 - !private ["s8HashableP", "zPosition"]
 - ["s8HashableP", ""]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "ColliderType"]
@@ -264,6 +276,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "zPosition"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -283,11 +296,13 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "physicsBody"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "zPosition"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
+- !private "Sb"
 - "s7CVarArgP"
 - !private "s10CollectionP"
 - !private "7Frogger12ColliderTypeV"
@@ -299,6 +314,7 @@ depends-nominal:
 - !private "s9DecodableP"
 - !private "s9EncodableP"
 - "s9EquatableP"
+- !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
@@ -335,6 +351,7 @@ depends-nominal:
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "s23_BidirectionalIndexableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"

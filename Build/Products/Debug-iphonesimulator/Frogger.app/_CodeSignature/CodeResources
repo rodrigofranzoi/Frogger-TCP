@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		wbEgSZv1DJBYwL6J+CeJxwykP8A=
+		KkBhFmggfZbbw5c87QD3sx6Qhuk=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -31,6 +31,10 @@
 		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
 		<data>
 		OBrsu7ygDWlO+sXxknWq5HcJoT0=
+		</data>
+		<key>Early GameBoy.ttf</key>
+		<data>
+		Ub7vtSAnzVqMlpUuKlUaLtCTDWI=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -120,9 +124,21 @@
 		<data>
 		z6aXkzeXITxg+hQBuYJime8YBNA=
 		</data>
+		<key>Frogger34.json</key>
+		<data>
+		RTigdyYtDnmhjWqW2fn1t4hYjSk=
+		</data>
+		<key>FroggerInit.json</key>
+		<data>
+		w/4HDf7SUS65tXKg6CMXirAU0XQ=
+		</data>
+		<key>FroggerMapInfinite.json</key>
+		<data>
+		aCzO7qSg75sWvWDnY8C403XKknc=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		N0VKlD8ZI26aAG7zRdTmTU2diO0=
+		HtNOcN+D82CEXn2V2R9r2j753s4=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -147,11 +163,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wbEgSZv1DJBYwL6J+CeJxwykP8A=
+			KkBhFmggfZbbw5c87QD3sx6Qhuk=
 			</data>
 			<key>hash2</key>
 			<data>
-			BmHqz6y+sqVDdvrRP+2R1SEgK0Cl5enAnb6mSL874wI=
+			u7lKbfBBcH2wTpiKv/3Dwzz7LlOuiMhjCz56+yK4pLo=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -218,6 +234,17 @@
 			<key>hash2</key>
 			<data>
 			LkS1y1Su0lsFITXP9YUPXcHluaLraOnSeZyiSX2xqLk=
+			</data>
+		</dict>
+		<key>Early GameBoy.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ub7vtSAnzVqMlpUuKlUaLtCTDWI=
+			</data>
+			<key>hash2</key>
+			<data>
+			+4TvHX+DfFmTuAuaMxkoTcSYgzlNDe8MnJmbUbRoPRM=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -460,6 +487,39 @@
 			<key>hash2</key>
 			<data>
 			o54jom1Jrvf09ubm7j1u9rwme7tvsb6J3ovrD8iAmw4=
+			</data>
+		</dict>
+		<key>Frogger34.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RTigdyYtDnmhjWqW2fn1t4hYjSk=
+			</data>
+			<key>hash2</key>
+			<data>
+			lRyQqgjFVzP9MT1zno5VJZuuom+3OGbmjWRHKWBhJ+o=
+			</data>
+		</dict>
+		<key>FroggerInit.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w/4HDf7SUS65tXKg6CMXirAU0XQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ToMOf41/3qRNPeT71DWx/NGWVdAa9CVjNB9EDMwPXqs=
+			</data>
+		</dict>
+		<key>FroggerMapInfinite.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aCzO7qSg75sWvWDnY8C403XKknc=
+			</data>
+			<key>hash2</key>
+			<data>
+			SiaPkvMoU6lFYYu0gHv8hKYmnoVMz3VSzedwQjYAuoM=
 			</data>
 		</dict>
 		<key>froggermap.json</key>

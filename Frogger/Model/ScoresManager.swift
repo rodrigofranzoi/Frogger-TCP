@@ -71,6 +71,7 @@ class ScoresManager  {
         }
     }
     
+    
     private class func saveScores(scores : [[String:String]]) {
         
         let file = "scores" + ".json"

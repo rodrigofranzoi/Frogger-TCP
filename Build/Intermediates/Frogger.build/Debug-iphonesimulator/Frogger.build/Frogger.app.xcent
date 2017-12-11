@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>C39L26AEZC.com.rodrigofranzoi.Frogger</string>
+	<string>G42Z863W7H.com.rodrigofranzoi.Frogger</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>C39L26AEZC.com.rodrigofranzoi.Frogger</string>
+		<string>G42Z863W7H.com.rodrigofranzoi.Frogger</string>
 	</array>
 </dict>
 </plist>
