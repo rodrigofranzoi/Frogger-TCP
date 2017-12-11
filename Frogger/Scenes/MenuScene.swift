@@ -63,7 +63,7 @@ class MenuScene: SKScene, ButtonDelegate {
         self.scoreBox = SKSpriteNode(texture: nil, color: .green, size: CGSize(width: self.size.width/2 + 20, height:  self.size.height - 60))
         self.scoreBox.position = CGPoint(x: self.size.width/4 - 20, y: 0)
         self.scoreBox.zPosition = 20
-        self.scoreBox.alpha = 0.8
+        //self.scoreBox.alpha = 0.8
         
         self.addChild(scoreBox)
         

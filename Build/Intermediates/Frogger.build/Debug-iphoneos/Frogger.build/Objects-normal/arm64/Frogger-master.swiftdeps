@@ -1,14 +1,14 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "1843ab3bc61118a9bb7431a52496db40"
-build_time: [1512971867, 718309000]
+build_time: [1512972058, 540676000]
 inputs:
   "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/Scenes/GameScene.swift": [1512965531, 0]
   "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/Model/ObstacleNode.swift": [1512873980, 0]
   "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/Model/HudLayer.swift": [1512948221, 0]
-  "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/Scenes/MenuScene.swift": [1512971848, 0]
+  "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/Scenes/MenuScene.swift": [1512972042, 0]
   "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/Model/ObjectOrientation.swift": [1512337569, 0]
   "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/Model/Spawn.swift": [1512880608, 0]
-  "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/GameViewController.swift": [1512970228, 0]
+  "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/GameViewController.swift": [1512972055, 0]
   "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/Model/MapManager.swift": [1512964451, 0]
   "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/Model/Ground.swift": [1512879231, 0]
   "/Users/rodrigofranzoi/Documents/UFRGS/2017/TCP/Frogger-TCP/Frogger/Model/PlayerNode.swift": [1512957599, 0]

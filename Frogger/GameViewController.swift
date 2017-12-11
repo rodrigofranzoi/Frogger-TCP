@@ -17,7 +17,6 @@ class GameViewController: UIViewController {
         
         if let view = self.view as! SKView? {
             self.loadMenu(view, score: nil)
-            self.debug(view)
         }
     }
     
@@ -60,7 +59,6 @@ extension GameViewController : MenuDelegate {
     func playGame() {
         if let view = self.view as! SKView? {
             self.loadGame(view)
-            self.debug(view)
         }
     }
 }
