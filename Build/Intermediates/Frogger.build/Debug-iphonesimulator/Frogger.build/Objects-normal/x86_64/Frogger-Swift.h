@@ -327,6 +327,8 @@ SWIFT_CLASS("_TtC7Frogger9MenuScene")
 
 
 
+
+
 SWIFT_CLASS("_TtC7Frogger12ObstacleNode")
 @interface ObstacleNode : ObjectNode
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

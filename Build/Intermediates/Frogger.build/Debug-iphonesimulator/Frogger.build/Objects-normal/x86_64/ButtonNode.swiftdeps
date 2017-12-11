@@ -18,6 +18,7 @@ depends-top-level:
 - !private "BooleanLiteralType"
 - "ButtonDelegate"
 - "ButtonNode"
+- !private "CGPoint"
 - "CGSize"
 - "NSCoder"
 - !private "SKAction"
@@ -36,6 +37,7 @@ depends-member:
 - ["7Frogger14ButtonDelegateP", "setSelectedButton"]
 - ["7Frogger10ButtonNodeC", "Bool"]
 - ["7Frogger10ButtonNodeC", "ButtonDelegate"]
+- !private ["7Frogger10ButtonNodeC", "CGPoint"]
 - ["7Frogger10ButtonNodeC", "CGSize"]
 - ["7Frogger10ButtonNodeC", "NSCoder"]
 - !private ["7Frogger10ButtonNodeC", "SKAction"]
@@ -43,6 +45,7 @@ depends-member:
 - ["7Frogger10ButtonNodeC", "Set"]
 - ["7Frogger10ButtonNodeC", "UIEvent"]
 - ["7Frogger10ButtonNodeC", "UITouch"]
+- !private ["7Frogger10ButtonNodeC", "anchorPoint"]
 - !private ["7Frogger10ButtonNodeC", "color"]
 - ["7Frogger10ButtonNodeC", "deinit"]
 - !private ["7Frogger10ButtonNodeC", "delegate"]
@@ -57,7 +60,10 @@ depends-member:
 - !private ["7Frogger10ButtonNodeC", "selected"]
 - ["7Frogger10ButtonNodeC", "touchesBegan"]
 - ["7Frogger10ButtonNodeC", "touchesEnded"]
+- !private ["SC7CGPointV", "init"]
+- !private ["s7CVarArgP", "CGPoint"]
 - !private ["s7CVarArgP", "SKAction"]
+- !private ["s7CVarArgP", "anchorPoint"]
 - !private ["s7CVarArgP", "color"]
 - !private ["s7CVarArgP", "cyan"]
 - !private ["s7CVarArgP", "delegate"]
@@ -73,7 +79,9 @@ depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "CGPoint"]
 - !private ["s28CustomDebugStringConvertibleP", "SKAction"]
+- !private ["s28CustomDebugStringConvertibleP", "anchorPoint"]
 - !private ["s28CustomDebugStringConvertibleP", "color"]
 - !private ["s28CustomDebugStringConvertibleP", "cyan"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
@@ -87,8 +95,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "selected"]
 - !private ["s28CustomDebugStringConvertibleP", "yellow"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s29CustomPlaygroundQuickLookableP", "CGPoint"]
 - !private ["s29CustomPlaygroundQuickLookableP", "SKAction"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "anchorPoint"]
 - !private ["s29CustomPlaygroundQuickLookableP", "color"]
 - !private ["s29CustomPlaygroundQuickLookableP", "delegate"]
 - !private ["s29CustomPlaygroundQuickLookableP", "deselect"]
@@ -101,8 +111,10 @@ depends-member:
 - ["s29CustomPlaygroundQuickLookableP", ""]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "CGPoint"]
 - !private ["s23CustomStringConvertibleP", "SKAction"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "anchorPoint"]
 - !private ["s23CustomStringConvertibleP", "color"]
 - !private ["s23CustomStringConvertibleP", "cyan"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
@@ -120,8 +132,10 @@ depends-member:
 - !private ["s9DecodableP", "init"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "CGPoint"]
 - !private ["s9EquatableP", "SKAction"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "anchorPoint"]
 - !private ["s9EquatableP", "color"]
 - !private ["s9EquatableP", "cyan"]
 - !private ["s9EquatableP", "delegate"]
@@ -139,8 +153,10 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "CGPoint"]
 - !private ["s8HashableP", "SKAction"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "anchorPoint"]
 - !private ["s8HashableP", "color"]
 - !private ["s8HashableP", "cyan"]
 - !private ["s8HashableP", "delegate"]
@@ -157,7 +173,9 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "CGPoint"]
 - !private ["So8NSCodingP", "SKAction"]
+- !private ["So8NSCodingP", "anchorPoint"]
 - !private ["So8NSCodingP", "color"]
 - !private ["So8NSCodingP", "cyan"]
 - !private ["So8NSCodingP", "delegate"]
@@ -171,7 +189,9 @@ depends-member:
 - !private ["So8NSCodingP", "selected"]
 - !private ["So8NSCodingP", "yellow"]
 - ["So8NSCodingP", ""]
+- !private ["So9NSCopyingP", "CGPoint"]
 - !private ["So9NSCopyingP", "SKAction"]
+- !private ["So9NSCopyingP", "anchorPoint"]
 - !private ["So9NSCopyingP", "color"]
 - !private ["So9NSCopyingP", "cyan"]
 - !private ["So9NSCopyingP", "delegate"]
@@ -194,6 +214,7 @@ depends-member:
 - !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "ButtonDelegate"]
+- !private ["So8NSObjectC", "CGPoint"]
 - ["So8NSObjectC", "CGSize"]
 - ["So8NSObjectC", "NSCoder"]
 - !private ["So8NSObjectC", "SKAction"]
@@ -201,6 +222,7 @@ depends-member:
 - ["So8NSObjectC", "Set"]
 - ["So8NSObjectC", "UIEvent"]
 - ["So8NSObjectC", "UITouch"]
+- !private ["So8NSObjectC", "anchorPoint"]
 - !private ["So8NSObjectC", "color"]
 - !private ["So8NSObjectC", "cyan"]
 - ["So8NSObjectC", "delegate"]
@@ -217,7 +239,9 @@ depends-member:
 - ["So8NSObjectC", "touchesBegan"]
 - ["So8NSObjectC", "touchesEnded"]
 - !private ["So8NSObjectC", "yellow"]
+- !private ["So16NSObjectProtocolP", "CGPoint"]
 - !private ["So16NSObjectProtocolP", "SKAction"]
+- !private ["So16NSObjectProtocolP", "anchorPoint"]
 - !private ["So16NSObjectProtocolP", "color"]
 - !private ["So16NSObjectProtocolP", "cyan"]
 - !private ["So16NSObjectProtocolP", "delegate"]
@@ -239,6 +263,7 @@ depends-member:
 - !private ["So8SKActionC", "scale"]
 - ["So6SKNodeC", "Bool"]
 - ["So6SKNodeC", "ButtonDelegate"]
+- !private ["So6SKNodeC", "CGPoint"]
 - ["So6SKNodeC", "CGSize"]
 - ["So6SKNodeC", "NSCoder"]
 - !private ["So6SKNodeC", "SKAction"]
@@ -246,6 +271,7 @@ depends-member:
 - ["So6SKNodeC", "Set"]
 - ["So6SKNodeC", "UIEvent"]
 - ["So6SKNodeC", "UITouch"]
+- !private ["So6SKNodeC", "anchorPoint"]
 - !private ["So6SKNodeC", "color"]
 - ["So6SKNodeC", "delegate"]
 - ["So6SKNodeC", "deselect"]
@@ -261,6 +287,7 @@ depends-member:
 - ["So6SKNodeC", "touchesEnded"]
 - ["So12SKSpriteNodeC", "Bool"]
 - ["So12SKSpriteNodeC", "ButtonDelegate"]
+- !private ["So12SKSpriteNodeC", "CGPoint"]
 - ["So12SKSpriteNodeC", "CGSize"]
 - ["So12SKSpriteNodeC", "NSCoder"]
 - !private ["So12SKSpriteNodeC", "SKAction"]
@@ -268,6 +295,7 @@ depends-member:
 - ["So12SKSpriteNodeC", "Set"]
 - ["So12SKSpriteNodeC", "UIEvent"]
 - ["So12SKSpriteNodeC", "UITouch"]
+- !private ["So12SKSpriteNodeC", "anchorPoint"]
 - !private ["So12SKSpriteNodeC", "color"]
 - ["So12SKSpriteNodeC", "delegate"]
 - ["So12SKSpriteNodeC", "deselect"]
@@ -282,7 +310,9 @@ depends-member:
 - ["So12SKSpriteNodeC", "touchesBegan"]
 - ["So12SKSpriteNodeC", "touchesEnded"]
 - ["So12SKSpriteNodeC", ""]
+- !private ["So10SKWarpableP", "CGPoint"]
 - !private ["So10SKWarpableP", "SKAction"]
+- !private ["So10SKWarpableP", "anchorPoint"]
 - !private ["So10SKWarpableP", "color"]
 - !private ["So10SKWarpableP", "delegate"]
 - !private ["So10SKWarpableP", "deselect"]
@@ -301,7 +331,9 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So7UIColorC", "cyan"]
 - !private ["So7UIColorC", "yellow"]
+- !private ["So18UIFocusEnvironmentP", "CGPoint"]
 - !private ["So18UIFocusEnvironmentP", "SKAction"]
+- !private ["So18UIFocusEnvironmentP", "anchorPoint"]
 - !private ["So18UIFocusEnvironmentP", "color"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "deselect"]
@@ -312,7 +344,9 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "select"]
 - !private ["So18UIFocusEnvironmentP", "selected"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So11UIFocusItemP", "CGPoint"]
 - !private ["So11UIFocusItemP", "SKAction"]
+- !private ["So11UIFocusItemP", "anchorPoint"]
 - !private ["So11UIFocusItemP", "color"]
 - !private ["So11UIFocusItemP", "delegate"]
 - !private ["So11UIFocusItemP", "deselect"]
@@ -323,7 +357,9 @@ depends-member:
 - !private ["So11UIFocusItemP", "select"]
 - !private ["So11UIFocusItemP", "selected"]
 - ["So11UIFocusItemP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "CGPoint"]
 - !private ["So30UIPasteConfigurationSupportingP", "SKAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "anchorPoint"]
 - !private ["So30UIPasteConfigurationSupportingP", "color"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "deselect"]
@@ -336,6 +372,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "ButtonDelegate"]
+- !private ["So11UIResponderC", "CGPoint"]
 - ["So11UIResponderC", "CGSize"]
 - ["So11UIResponderC", "NSCoder"]
 - !private ["So11UIResponderC", "SKAction"]
@@ -343,6 +380,7 @@ depends-member:
 - ["So11UIResponderC", "Set"]
 - ["So11UIResponderC", "UIEvent"]
 - ["So11UIResponderC", "UITouch"]
+- !private ["So11UIResponderC", "anchorPoint"]
 - !private ["So11UIResponderC", "color"]
 - ["So11UIResponderC", "delegate"]
 - ["So11UIResponderC", "deselect"]
@@ -356,7 +394,9 @@ depends-member:
 - ["So11UIResponderC", "selected"]
 - ["So11UIResponderC", "touchesBegan"]
 - ["So11UIResponderC", "touchesEnded"]
+- !private ["So30UIResponderStandardEditActionsP", "CGPoint"]
 - !private ["So30UIResponderStandardEditActionsP", "SKAction"]
+- !private ["So30UIResponderStandardEditActionsP", "anchorPoint"]
 - !private ["So30UIResponderStandardEditActionsP", "color"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "deselect"]
@@ -379,7 +419,9 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "init"]
 - !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SKAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "anchorPoint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "color"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cyan"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
@@ -402,6 +444,7 @@ depends-nominal:
 - !private "Sb"
 - "7Frogger14ButtonDelegateP"
 - "7Frogger10ButtonNodeC"
+- !private "SC7CGPointV"
 - "s7CVarArgP"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
@@ -481,4 +524,19 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SpriteKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/GameplayKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/GameplayKit.framework/Headers/GameplayKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 interface-hash: "b6f33f0a15869c9b901e02619bed89cb"

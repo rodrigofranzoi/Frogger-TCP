@@ -38,12 +38,15 @@ class Spawn: ObjectNode {
             vehicle = Car(size: size, orientation: objPosition)
         }
         
-        vehicle.startMoving()
+        self.move(vehicle: vehicle)
         addChild(vehicle)
-        
         run(action) {
             self.spawnCars()
         }
+    }
+    
+    public func move(vehicle : Vehicle) {
+        vehicle.startMoving()
     }
     
     public func getCarsInterval() -> Double {
@@ -66,28 +69,8 @@ class DoubleSpawn : Spawn {
         super.init(faceOrientation: faceOrientation, level: level, imgNamed: imgNamed, size: size, position: position)
     }
     
-    override func spawnCars() {
-
-        let action = SKAction.wait(forDuration: self.getCarsInterval())
-        var vehicle : Vehicle!
-        
-        switch self.carNumber {
-        case 0:
-            vehicle = Car(size: size, orientation: objPosition)
-        case 1:
-            vehicle = Bike(size: size, orientation: objPosition)
-        case 2:
-            vehicle = Bus(size: size, orientation: objPosition)
-        default:
-            vehicle = Car(size: size, orientation: objPosition)
-        }
-        
+    override func move(vehicle: Vehicle) {
         vehicle.startMoving(withDirection: laneDirection)
-        addChild(vehicle)
-        
-        run(action) {
-            self.spawnCars()
-        }
     }
     
     required init?(coder aDecoder: NSCoder) {
