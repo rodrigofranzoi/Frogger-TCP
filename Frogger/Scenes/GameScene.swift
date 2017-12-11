@@ -70,7 +70,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.cam.position = CGPoint(x: self.CAM_WIDTH, y: self.camMaxYPoint)
         self.playerDelimiter.position = CGPoint(x: self.player.position.x, y: self.camMaxYPoint - (32 * 4))
         
-        if self.mapManager.yPosition - 32 < self.player.position.y {
+        if self.mapManager.yPosition - 128 < self.player.position.y {
             self.gameLevel += 1
             self.mapManager.loadMap(mapName: "Frogger34")
         }
