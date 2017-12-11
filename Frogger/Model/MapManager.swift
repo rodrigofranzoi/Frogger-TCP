@@ -10,7 +10,14 @@ import Foundation
 import SpriteKit
 
 protocol MapDelegate {
-    func nodeForMatrix(mapHeight: Int, mapWidth: Int, index: Int, objCode: Int, spriteSize: CGSize, position: CGPoint, layerName: String) -> SKSpriteNode?
+    func nodeForMatrix(mapHeight: Int,
+                       mapWidth: Int,
+                       index: Int,
+                       objCode: Int,
+                       spriteSize: CGSize,
+                       position: CGPoint,
+                       layerName: String) -> SKSpriteNode?
+    
     func setSize(size: CGSize)
 }
 
@@ -23,7 +30,6 @@ class MapManager {
     var lastIndex : Int     = 0
     
     var atualLvl = 0
-    
     var spritesForLvl : [[SKSpriteNode]] = []
     
     private func removeLastLevel() {
@@ -38,7 +44,6 @@ class MapManager {
     }
     
     public func loadMap(mapName : String = "FroggerInit") {
-        
         self.removeLastLevel()
         if let gamePhase = loadGame(named: mapName) {
             self.atualLvl += 1

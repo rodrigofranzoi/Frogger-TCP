@@ -114,7 +114,6 @@ class Bike: Vehicle {
         super.init(image: "car1", speed: 10, size: size, orientation: orientation)
     }
 
-
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
         
