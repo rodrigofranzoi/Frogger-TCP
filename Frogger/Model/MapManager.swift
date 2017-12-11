@@ -10,7 +10,7 @@ import Foundation
 import SpriteKit
 
 protocol MapDelegate {
-    func nodeForMatrix(mapHeight: Int, mapWidth: Int, index: Int, objCode: Int, spriteSize: CGSize, position: CGPoint, layerName: String)
+    func nodeForMatrix(mapHeight: Int, mapWidth: Int, index: Int, objCode: Int, spriteSize: CGSize, position: CGPoint, layerName: String) -> SKSpriteNode?
     func setSize(size: CGSize)
 }
 
@@ -22,9 +22,27 @@ class MapManager {
     var xPosition : CGFloat = 0.0
     var lastIndex : Int     = 0
     
+    var atualLvl = 0
+    
+    var spritesForLvl : [[SKSpriteNode]] = []
+    
+    private func removeLastLevel() {
+        if atualLvl != 0 {
+            let sprites = self.spritesForLvl[atualLvl - 1]
+            for sprite in sprites {
+                sprite.removeAllActions()
+                sprite.removeAllChildren()
+                sprite.removeFromParent()
+            }
+        }
+    }
+    
     public func loadMap(mapName : String = "FroggerInit") {
+        
+        self.removeLastLevel()
         if let gamePhase = loadGame(named: mapName) {
-            
+            self.atualLvl += 1
+            self.spritesForLvl.append([])
             let tileHeight = gamePhase["tileheight"] as? Int ?? 32
             let tileWidth  = gamePhase["tilewidth"] as? Int ?? 32
             
@@ -41,14 +59,15 @@ class MapManager {
                         for (index, obj) in data.reversed().enumerated() {
                             
                             let spriteSize = CGSize(width: tileWidth, height: tileHeight)
-                            
                             let newIndex = self.lastIndex + index
                             
                             self.yPosition = spriteSize.height * CGFloat(Int(newIndex/mapWidth))
                             self.xPosition = spriteSize.width * CGFloat(newIndex % mapWidth)
                             let position =  CGPoint(x: xPosition, y: yPosition)
                             
-                            self.delegate?.nodeForMatrix(mapHeight: mapHeight, mapWidth: mapWidth, index: index, objCode: obj, spriteSize: spriteSize, position: position, layerName: name)
+                            if let node = self.delegate?.nodeForMatrix(mapHeight: mapHeight, mapWidth: mapWidth, index: index, objCode: obj, spriteSize: spriteSize, position: position, layerName: name) {
+                                self.spritesForLvl[atualLvl-1].append(node)
+                            }
                             
                         }
                     }
@@ -71,6 +90,5 @@ class MapManager {
         }
         return nil
     }
-    
 }
 

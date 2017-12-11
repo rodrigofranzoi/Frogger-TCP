@@ -38,7 +38,7 @@ class ScoresManager  {
     
     class func getScores(rankQnt numb: Int) -> String {
         let scores : [[String:String]] = self.getScores(rankQnt: numb)
-        var str : String = ""
+        var str : String = "#N  DATE\t\t\t\t\t\tSCORE\n\n"
         
         for (index, score) in scores.enumerated() {
             let scoreNumber : String = score["number"]!

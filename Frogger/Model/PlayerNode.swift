@@ -48,6 +48,7 @@ class PlayerNode: ObjectNode {
         self.name = "player"
         self.zPosition = 3
         self.color = .clear
+        self.setScale(1.4)
         
         self.setPhysics()
         
@@ -137,7 +138,8 @@ class PlayerNode: ObjectNode {
     }
     
     private func setPhysics() {
-        self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: size.width - 0.1, height: size.height - 0.1))
+        self.physicsBody = SKPhysicsBody(circleOfRadius: 16)
+        //self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: size.width - 0.1, height: size.height - 0.1))
         self.physicsBody?.affectedByGravity = false
         self.physicsBody?.isDynamic = true
         self.physicsBody?.contactTestBitMask = ColliderType.Consumible
